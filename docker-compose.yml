@@ -5,5 +5,3 @@ services:
     image: opengatecollaboration/gate:8.2
     volumes:
       - ./edugate_src:/edugate_src
-      - ./edugate_results:/edugate_results
-
