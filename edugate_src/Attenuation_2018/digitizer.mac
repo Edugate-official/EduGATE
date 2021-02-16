@@ -1,0 +1,15 @@
+#
+#	D I G I T I Z E R 
+#
+
+/gate/digitizer/Singles/insert 							adder
+/gate/digitizer/Singles/adder/verbose 					0
+/gate/digitizer/Singles/insert							readout
+/gate/digitizer/Singles/readout/setDepth				1
+/gate/digitizer/Singles/readout/verbose 				0
+
+/gate/digitizer/Singles/insert							thresholder
+/gate/digitizer/Singles/thresholder/setThreshold 		0. keV
+
+/gate/digitizer/Singles/insert							upholder
+/gate/digitizer/Singles/upholder/setUphold				10000. keV

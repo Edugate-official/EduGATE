@@ -1,0 +1,6 @@
+#
+# use Bremsstrahlung
+#
+/gate/physics/addProcess Bremsstrahlung
+/gate/physics/processes/Bremsstrahlung/setModel PenelopeModel e-
+/gate/physics/processes/Bremsstrahlung/setModel PenelopeModel e+

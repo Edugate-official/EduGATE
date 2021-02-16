@@ -1,0 +1,88 @@
+List of particles with their associated processes
+
+  * GenericIon
+    - IonIonisation
+    - RadioactiveDecay
+  * He3
+    - IonIonisation
+  * alpha
+    - IonIonisation
+  * deuteron
+    - IonIonisation
+  * e+
+    - Bremsstrahlung
+    - ElectronIonisation
+    - msc
+  * e-
+    - Bremsstrahlung
+    - ElectronIonisation
+    - msc
+  * gamma
+    - Compton
+    - GammaConversion
+    - PhotoElectric
+  * triton
+    - IonIonisation
+
+
+-----------------------------------------------------------------------------
+
+List of processes:
+
+   ===  Process: Bremsstrahlung  ===
+Particle: e+
+    * Model(s):
+       - PenelopeModel
+
+Particle: e-
+    * Model(s):
+       - PenelopeModel
+
+   ===  Process: Compton  ===
+Particle: gamma
+    * Model(s):
+       - PenelopeModel
+
+   ===  Process: ElectronIonisation  ===
+Particle: e-
+    * Model(s):
+       - PenelopeModel
+
+Particle: e+
+    * Model(s):
+       - PenelopeModel
+
+   ===  Process: GammaConversion  ===
+Particle: gamma
+    * Model(s):
+       - PenelopeModel
+
+   ===  Process: IonIonisation  ===
+Particle: GenericIon
+
+Particle: alpha
+
+Particle: deuteron
+
+Particle: triton
+
+Particle: He3
+
+   ===  Process: PhotoElectric  ===
+Particle: gamma
+    * Model(s):
+       - PenelopeModel
+
+   ===  Process: RadioactiveDecay  ===
+Particle: GenericIon
+
+   ===  Process: eMultipleScattering  ===
+Particle: e-
+    * Model(s):
+       - <!> *** Warning *** <!> No model selected!
+
+Particle: e+
+    * Model(s):
+       - <!> *** Warning *** <!> No model selected!
+
+

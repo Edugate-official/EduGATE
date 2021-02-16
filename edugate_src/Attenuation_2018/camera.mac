@@ -1,0 +1,81 @@
+#
+#	C A M E R A
+#
+
+#	Type: cylindricalPET
+
+/gate/world/daughters/name						cylindricalPET
+/gate/world/daughters/insert					cylinder
+
+/gate/cylindricalPET/geometry/setRmin			50 mm
+/gate/cylindricalPET/geometry/setRmax			60 mm
+
+#/gate/cylindricalPET/geometry/setRmin			100 mm
+#/gate/cylindricalPET/geometry/setRmax			110 mm
+
+/gate/cylindricalPET/geometry/setHeight			10 mm
+
+#/gate/cylindricalPET/setMaterial				Air
+/gate/cylindricalPET/setMaterial				Vacuum
+/gate/cylindricalPET/vis/setColor				yellow
+/gate/cylindricalPET/vis/forceWireframe			1
+/gate/cylindricalPET/vis/setVisible				1
+/gate/cylindricalPET/placement/setTranslation	0.0 0.0 0.0 cm
+
+#	Cassette
+
+/gate/cylindricalPET/daughters/name				cassette
+/gate/cylindricalPET/daughters/insert			box
+/gate/cassette/geometry/setXLength				10 mm
+/gate/cassette/geometry/setYLength				4 mm
+/gate/cassette/geometry/setZLength				4 mm
+/gate/cassette/setMaterial						Vacuum
+/gate/cassette/vis/setColor						black
+/gate/cassette/vis/forceWireframe				1
+/gate/cassette/vis/setVisible					0
+/gate/cassette/placement/setTranslation			55 0 0 mm
+#/gate/cassette/placement/setTranslation		105 0 0 mm
+/gate/systems/cylindricalPET/rsector/attach		cassette
+
+#	Module
+
+/gate/cassette/daughters/name 					module
+/gate/cassette/daughters/insert 				box
+/gate/module/placement/setTranslation 			0 0.0 0.0 mm
+/gate/module/geometry/setXLength 				10 mm  
+/gate/module/geometry/setYLength 				4 mm
+/gate/module/geometry/setZLength 				4 mm
+/gate/module/setMaterial 						Vacuum
+/gate/module/vis/forceWireframe					1
+/gate/module/vis/setVisible						0
+/gate/module/vis/setColor 						black
+/gate/systems/cylindricalPET/module/attach		module
+
+#	LSO crystal
+
+/gate/module/daughters/name 					crystal
+/gate/module/daughters/insert 					box
+/gate/crystal/placement/setTranslation 			0 0.0 0.0 mm
+/gate/crystal/geometry/setXLength    			10 mm  
+/gate/crystal/geometry/setYLength    			4 mm
+/gate/crystal/geometry/setZLength    			4 mm
+/gate/crystal/setMaterial 						LSO
+/gate/crystal/vis/forceSolid					1
+#/gate/crystal/vis/forceWireframe				1
+/gate/crystal/vis/setVisible					1
+/gate/crystal/vis/setColor 						red
+/gate/systems/cylindricalPET/crystal/attach		crystal
+
+#	R E P E A T   C A S S E T T E
+
+/gate/cassette/repeaters/insert 				ring
+/gate/cassette/ring/setRepeatNumber 			64
+/gate/cassette/ring/setAngularSpan 				360 deg
+
+#	A T T A C H    C R Y S T A L  SD
+
+/gate/crystal/attachCrystalSD
+
+/gate/systems/cylindricalPET/describe
+
+

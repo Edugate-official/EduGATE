@@ -1,0 +1,24 @@
+#
+#	S O U R C E S
+#
+
+# source: defining spherical electron source
+
+/gate/source/addSource 						ElectronSource
+/gate/source/ElectronSource/gps/type		Volume
+/gate/source/ElectronSource/gps/shape		Sphere
+/gate/source/ElectronSource/gps/radius		0.125 mm
+/gate/source/ElectronSource/gps/centre 		0. 0. 0. cm
+/gate/source/ElectronSource/gps/particle	e-
+/gate/source/ElectronSource/gps/energytype 	Mono
+/gate/source/ElectronSource/gps/monoenergy 	{Src_E} keV
+/gate/source/ElectronSource/setActivity 	{Src_Act}
+/gate/source/ElectronSource/gps/angtype		iso
+/gate/source/ElectronSource/gps/mintheta	60. deg
+/gate/source/ElectronSource/gps/maxtheta 	120. deg
+/gate/source/ElectronSource/gps/minphi 		150. deg
+/gate/source/ElectronSource/gps/maxphi 		210. deg
+
+/gate/source/list
+
+/gate/source/ElectronSource/gps/confine 	source_vol

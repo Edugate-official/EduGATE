@@ -1,0 +1,67 @@
+#
+#	C A M E R A
+#
+
+#	Type: scanner
+
+
+/gate/world/daughters/name 				scanner
+/gate/world/daughters/insert 			box
+/gate/scanner/geometry/setXLength  		30. cm
+/gate/scanner/geometry/setYLength 		30. cm
+/gate/scanner/geometry/setZLength 		30. cm
+/gate/scanner/placement/setTranslation 	0. 0. 0. cm
+/gate/scanner/setMaterial 				Vacuum
+/gate/scanner/vis/setColor 				white
+/gate/scanner/vis/forceWireframe
+/gate/scanner/vis/setVisible			0
+
+# CRYSTAL
+# Create the crystal volume
+
+/gate/scanner/daughters/name 			crystal
+/gate/scanner/daughters/insert			sphere
+/gate/crystal/geometry/setRmax			120 mm
+/gate/crystal/geometry/setRmin			2 mm
+
+
+/gate/crystal/geometry/setPhiStart		0.0 deg
+/gate/crystal/geometry/setDeltaPhi		360.0 deg
+
+/gate/crystal/geometry/setThetaStart	0.0 deg
+/gate/crystal/geometry/setDeltaTheta	180.0 deg
+
+/gate/crystal/setMaterial				{Medium}
+
+/gate/crystal/vis/setColor				yellow
+/gate/crystal/vis/setVisible			1
+/gate/crystal/vis/forceWireframe
+#/gate/crystal/vis/forceSolid
+
+# set camera-ID used in root-file-name
+#/control/alias camID Sph
+
+/gate/systems/scanner/level2/attach 	crystal
+
+/gate/crystal/attachCrystalSD
+
+/gate/scanner/attachPhantomSD
+
+/gate/systems/scanner/describe
+
+# define magnetic field at the center of the system:
+
+# z-direction
+#/gate/geometry/setMagField 0.0 0.0 0.00001 T
+#/gate/geometry/setMagField 0.0 0.0 0.1 T
+#/gate/geometry/setMagField 0.0 0.0 0.5 T
+#/gate/geometry/setMagField 0.0 0.0 1.0 T
+#/gate/geometry/setMagField 0.0 0.0 3.0 T
+#/gate/geometry/setMagField 0.0 0.0 7.0 T
+#/gate/geometry/setMagField 0 0 9.4 T
+
+# define magnetic field at the center of the system:
+
+/gate/geometry/setMagField {B0_x} {B0_y} {B0_z} T
+
+

@@ -1,0 +1,13 @@
+/control/alias VisuOnOff  novisu
+/control/alias ViewPointThetaPhi  0 90
+/control/alias CrysMat  Air
+/control/alias Rad       50
+/control/alias particle  e-
+/control/alias Compton   enabled
+/control/alias Photo     enabled 
+/control/alias Annihil  enabled
+/control/alias Brems disabled
+/control/alias Ioni      enabled
+/control/alias MScat     enabled
+/control/alias Src_E  511
+/control/alias Src_Act  10000

@@ -1,0 +1,4 @@
+#
+# use eMultipleScattering
+/gate/physics/addProcess eMultipleScattering e-
+/gate/physics/addProcess eMultipleScattering e+

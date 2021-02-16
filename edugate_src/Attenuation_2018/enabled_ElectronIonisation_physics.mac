@@ -1,0 +1,6 @@
+#
+# use ElectronIonisation
+#
+/gate/physics/addProcess ElectronIonisation e-
+/gate/physics/addProcess ElectronIonisation e+
+/gate/physics/processes/ElectronIonisation/setModel PenelopeModel

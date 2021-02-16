@@ -1,0 +1,10 @@
+Visualisation: disabled; enabled;
+ViewPointThetaPhi: 0 90; 30 30; 90 0; -90 0; 89 90; 15 30; 30 30; 45 45; 60 60;
+Source_Type: O15; F18; Mn52; C11; I124;
+Annihilation: disabled; enabled;
+SourceActivity: 50; 10; 100; 1000; 500; 10000; 20000; 100000;
+Camera_Type: cube; cylinder;
+Medium: Water; Air; Lung; Liver; Vacuum;
+B0_x: 0.0; 0.1; 0.2; 0.3; 0.4; 0.5; 1.0; 3.0; 7.0; 9.4; 12.0; 15.0; 20.0;
+B0_y: 0.0; 0.1; 0.2; 0.3; 0.4; 0.5; 1.0; 3.0; 7.0; 9.4; 12.0; 15.0; 20.0;
+B0_z: 0.0; 0.1; 0.2; 0.3; 0.4; 0.5; 1.0; 3.0; 7.0; 9.4; 12.0; 15.0; 20.0;

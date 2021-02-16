@@ -1,0 +1,7 @@
+VisuOnOff: novisu; visu;
+ViewPointThetaPhi: 0 90; 30 30; 90 0; -90 0; 89 90; 15 30; 30 30; 45 45; 60 60;
+SphereMaterial: Water; Plexiglass; Air; Lead; Copper; Tungsten;
+SphereRadius: 50; 70; 100;
+SourceEnergy: 30; 50; 70; 100; 200; 300; 511; 
+SourceActivity: 10; 20; 50; 100; 1000; 10000; 100000;
+BaseName: Attenuation;

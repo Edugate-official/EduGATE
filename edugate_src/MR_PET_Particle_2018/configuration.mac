@@ -1,0 +1,13 @@
+/control/alias Visualisation  disabled
+/control/alias ViewPointThetaPhi  0 90
+/control/alias particle  e-
+/control/alias Annihilation  disabled
+/control/alias SourceEnergy  500
+/control/alias SourceActivity  50
+/control/alias Camera_Type  cube
+/control/alias Source_Type  beam_x
+/control/alias Medium  Water
+/control/alias B0_x  0.0
+/control/alias B0_y  7.0
+/control/alias B0_z  0.0
+/control/alias RootFileName MR_PET_{Camera_Type}_{Medium}_{SourceEnergy}_{particle}_{SourceActivity}_{Source_Type}_{B0_x}_{B0_y}_{B0_z}_{Annihilation}

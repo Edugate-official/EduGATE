@@ -1,0 +1,5 @@
+Visualisation: disabled; enabled;
+ViewPointThetaPhi: 0 90; 30 30; 90 0; -90 0; 89 90; 15 30; 30 30; 45 45; 60 60;
+particle: e+; e-; gamma;
+Annihilation: disabled; enabled;
+SourceEnergy:

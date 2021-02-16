@@ -1,0 +1,17 @@
+/control/alias ViewPointThetaPhi  30 30
+/control/alias VisuOnOff  novisu
+/control/alias Src_Act  0.5 MBq
+/control/alias Nb_Det  64
+/control/alias CrysMat  NaI
+/control/alias PhanMat  Water
+/control/alias PhanRmax  18 mm
+/control/alias PhanRmin  13 mm
+/control/alias Phan_Src_XPos  0.
+/control/alias SrcVolMat  Vacuum
+/control/alias SrcType  src_gamma_bck2bck_lim_ang
+/control/alias Src_E  511 keV
+/control/alias E_blur  0.1
+/control/alias E_low  5
+/control/alias E_up  2000
+/control/alias t_slice  1
+/control/alias t_stop   10

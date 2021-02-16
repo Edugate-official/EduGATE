@@ -1,0 +1,31 @@
+#
+#	S O U R C E S
+#
+
+/gate/source/addSource					TwoGamma
+/gate/source/TwoGamma/setActivity		{Src_Act}
+/gate/source/TwoGamma/gps/particle		gamma
+/gate/source/TwoGamma/setType			backtoback
+/gate/source/TwoGamma/gps/energytype	Mono
+/gate/source/TwoGamma/gps/monoenergy	{Src_E}
+
+
+/gate/source/TwoGamma/gps/type			Volume
+
+/gate/source/TwoGamma/gps/shape 		Cylinder
+/gate/source/TwoGamma/gps/radius 		0.1 mm
+/gate/source/TwoGamma/gps/halfz 		15.0 mm
+
+/gate/source/TwoGamma/gps/centre		{Phan_Src_XPos} 0. 0. mm
+
+/gate/source/TwoGamma/gps/angtype		iso
+/gate/source/TwoGamma/gps/mintheta 		85. deg
+/gate/source/TwoGamma/gps/maxtheta 		95. deg
+/gate/source/TwoGamma/gps/minphi 		175. deg
+/gate/source/TwoGamma/gps/maxphi 		185. deg
+#/gate/source/TwoGamma/gps/minphi 	 	89. deg
+#/gate/source/TwoGamma/gps/maxphi 		91. deg
+
+/gate/source/list
+
+/gate/source/TwoGamma/gps/confine 		source_vol

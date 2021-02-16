@@ -1,0 +1,36 @@
+#
+#	P H A N T O M
+#
+
+# Create the attenuating volume/phantom
+
+/gate/world/daughters/name 					Phantom
+/gate/world/daughters/insert 				cylinder
+/gate/Phantom/geometry/setRmax 				{PhanRmax}
+/gate/Phantom/geometry/setRmin 				{PhanRmin}
+/gate/Phantom/geometry/setHeight 			60. mm
+/gate/Phantom/placement/setTranslation 		{Phan_Src_XPos} 0. 0. mm
+/gate/Phantom/setMaterial 					{PhantomMaterial}
+/gate/Phantom/vis/setColor 					blue
+#/gate/Phantom/vis/forceWireframe
+/gate/Phantom/vis/forceSolid
+/gate/Phantom/vis/setVisible				1
+
+# SOURCE
+# Create the source volume/phantom
+
+/gate/world/daughters/name 					source_vol
+/gate/world/daughters/insert 				sphere
+/gate/source_vol/geometry/setRmax 			3.0  mm
+/gate/source_vol/geometry/setRmin 			0.0  mm
+/gate/source_vol/placement/setTranslation 	{Phan_Src_XPos} 0. 0. mm
+/gate/source_vol/setMaterial 				{SourceVolMaterial}
+/gate/source_vol/vis/setColor 				white
+#/gate/source_vol/vis/forceWireframe
+/gate/source_vol/vis/forceSolid
+/gate/source_vol/vis/setVisible				1
+
+/gate/Phantom/attachPhantomSD
+/gate/source_vol/attachPhantomSD
+
+

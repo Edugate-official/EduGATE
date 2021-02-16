@@ -1,0 +1,5 @@
+#
+# use Compton
+#
+/gate/physics/addProcess Compton gamma
+/gate/physics/processes/Compton/setModel PenelopeModel

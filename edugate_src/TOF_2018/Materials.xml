@@ -1,0 +1,595 @@
+<?xml version="1.0"?>
+<materials>
+  <material name="LYSO" density="7.4" state="solid">
+    <propertiestable>
+      <property name="SCINTILLATIONYIELD" value="26000" unit="1/MeV"/>
+      <property name="RESOLUTIONSCALE" value="4.4"/>
+      <property name="FASTTIMECONSTANT" value="40" unit="ns"/>
+      <property name="YIELDRATIO" value="1"/>
+      <propertyvector name="FASTCOMPONENT" energyunit="eV">
+	<ve energy="1.8"  value="0"/>
+	<ve energy="1.85" value="7.78e-005"/>
+	<ve energy="1.89" value="0.000149"/>
+	<ve energy="1.93" value="0.000223"/>
+	<ve energy="1.98" value="0.000371"/>
+	<ve energy="2.03" value="0.000596"/>
+	<ve energy="2.08" value="0.000905"/>
+	<ve energy="2.13" value="0.00136"/>
+	<ve energy="2.19" value="0.00201"/>
+	<ve energy="2.25" value="0.00295"/>
+	<ve energy="2.31" value="0.00413"/>
+	<ve energy="2.38" value="0.00574"/>
+	<ve energy="2.45" value="0.00794"/>
+	<ve energy="2.49" value="0.00947"/>
+	<ve energy="2.5"  value="0.01"/>
+	<ve energy="2.52" value="0.0107"/>
+	<ve energy="2.54" value="0.0114"/>
+	<ve energy="2.55" value="0.0123"/>
+	<ve energy="2.57" value="0.0133"/>
+	<ve energy="2.58" value="0.0143"/>
+	<ve energy="2.6"  value="0.0156"/>
+	<ve energy="2.62" value="0.0172"/>
+	<ve energy="2.63" value="0.0185"/>
+	<ve energy="2.65" value="0.0203"/>
+	<ve energy="2.67" value="0.0225"/>
+	<ve energy="2.68" value="0.0245"/>
+	<ve energy="2.7"  value="0.0271"/>
+	<ve energy="2.72" value="0.0293"/>
+	<ve energy="2.74" value="0.0322"/>
+	<ve energy="2.76" value="0.0352"/>
+	<ve energy="2.77" value="0.0383"/>
+	<ve energy="2.79" value="0.0413"/>
+	<ve energy="2.81" value="0.0439"/>
+	<ve energy="2.83" value="0.0459"/>
+	<ve energy="2.85" value="0.0481"/>
+	<ve energy="2.87" value="0.0487"/>
+	<ve energy="2.89" value="0.0471"/>
+	<ve energy="2.91" value="0.0446"/>
+	<ve energy="2.93" value="0.0403"/>
+	<ve energy="2.95" value="0.0362"/>
+	<ve energy="2.97" value="0.0317"/>
+	<ve energy="2.99" value="0.0294"/>
+	<ve energy="3.02" value="0.0279"/>
+	<ve energy="3.04" value="0.0273"/>
+	<ve energy="3.06" value="0.0247"/>
+	<ve energy="3.08" value="0.0226"/>
+	<ve energy="3.11" value="0.019"/>
+	<ve energy="3.13" value="0.0147"/>
+	<ve energy="3.15" value="0.00965"/>
+	<ve energy="3.18" value="0.00522"/>
+	<ve energy="3.2"  value="0.0022"/>
+	<ve energy="3.23" value="0.00072"/>
+	<ve energy="3.25" value="0"/>
+      </propertyvector>
+      <propertyvector name="ABSLENGTH" unit="mm" energyunit="eV">
+	<ve energy="6.53" value="5.32"/>
+	<ve energy="6.46" value="5.06"/>
+	<ve energy="6.39" value="4.98"/>
+	<ve energy="6.33" value="4.91"/>
+	<ve energy="6.26" value="4.8"/>
+	<ve energy="6.2"  value="4.61"/>
+	<ve energy="6.14" value="4.34"/>
+	<ve energy="6.08" value="4.1"/>
+	<ve energy="6.02" value="3.89"/>
+	<ve energy="5.96" value="3.79"/>
+	<ve energy="5.9"  value="3.74"/>
+	<ve energy="5.85" value="3.78"/>
+	<ve energy="5.79" value="3.78"/>
+	<ve energy="5.74" value="3.83"/>
+	<ve energy="5.69" value="3.81"/>
+	<ve energy="5.64" value="3.76"/>
+	<ve energy="5.58" value="3.68"/>
+	<ve energy="5.54" value="3.55"/>
+	<ve energy="5.49" value="3.42"/>
+	<ve energy="5.44" value="3.31"/>
+	<ve energy="5.39" value="3.22"/>
+	<ve energy="5.34" value="3.2"/>
+	<ve energy="5.3"  value="3.2"/>
+	<ve energy="5.25" value="3.2"/>
+	<ve energy="5.21" value="3.23"/>
+	<ve energy="5.17" value="3.26"/>
+	<ve energy="5.12" value="3.29"/>
+	<ve energy="5.08" value="3.28"/>
+	<ve energy="5.04" value="3.27"/>
+	<ve energy="5"    value="3.26"/>
+	<ve energy="4.96" value="3.22"/>
+	<ve energy="4.92" value="3.18"/>
+	<ve energy="4.88" value="3.13"/>
+	<ve energy="4.84" value="3.07"/>
+	<ve energy="4.81" value="3.04"/>
+	<ve energy="4.77" value="3.05"/>
+	<ve energy="4.73" value="3.04"/>
+	<ve energy="4.7"  value="3.04"/>
+	<ve energy="4.66" value="3.09"/>
+	<ve energy="4.63" value="3.12"/>
+	<ve energy="4.59" value="3.16"/>
+	<ve energy="4.56" value="3.21"/>
+	<ve energy="4.52" value="3.26"/>
+	<ve energy="4.49" value="3.28"/>
+	<ve energy="4.46" value="3.28"/>
+	<ve energy="4.43" value="3.28"/>
+	<ve energy="4.4"  value="3.25"/>
+	<ve energy="4.37" value="3.23"/>
+	<ve energy="4.34" value="3.19"/>
+	<ve energy="4.31" value="3.15"/>
+	<ve energy="4.28" value="3.09"/>
+	<ve energy="4.25" value="3.06"/>
+	<ve energy="4.22" value="3.02"/>
+	<ve energy="4.19" value="2.98"/>
+	<ve energy="4.16" value="2.92"/>
+	<ve energy="4.13" value="2.91"/>
+	<ve energy="4.11" value="2.87"/>
+	<ve energy="4.08" value="2.88"/>
+	<ve energy="4.05" value="2.88"/>
+	<ve energy="4.03" value="2.89"/>
+	<ve energy="4"    value="2.91"/>
+	<ve energy="3.97" value="2.9"/>
+	<ve energy="3.95" value="2.9"/>
+	<ve energy="3.92" value="2.93"/>
+	<ve energy="3.9"  value="2.89"/>
+	<ve energy="3.87" value="2.92"/>
+	<ve energy="3.85" value="2.94"/>
+	<ve energy="3.83" value="2.97"/>
+	<ve energy="3.8"  value="3.02"/>
+	<ve energy="3.78" value="3.03"/>
+	<ve energy="3.76" value="3.05"/>
+	<ve energy="3.73" value="3.05"/>
+	<ve energy="3.71" value="3.06"/>
+	<ve energy="3.69" value="3.07"/>
+	<ve energy="3.67" value="3.08"/>
+	<ve energy="3.65" value="3.07"/>
+	<ve energy="3.63" value="3.1"/>
+	<ve energy="3.6"  value="3.15"/>
+	<ve energy="3.58" value="3.2"/>
+	<ve energy="3.56" value="3.31"/>
+	<ve energy="3.54" value="3.35"/>
+	<ve energy="3.52" value="3.32"/>
+	<ve energy="3.5"  value="3.3"/>
+	<ve energy="3.48" value="3.27"/>
+	<ve energy="3.46" value="3.27"/>
+	<ve energy="3.44" value="3.26"/>
+	<ve energy="3.42" value="3.26"/>
+	<ve energy="3.41" value="3.26"/>
+	<ve energy="3.39" value="3.37"/>
+	<ve energy="3.37" value="3.35"/>
+	<ve energy="3.35" value="3.42"/>
+	<ve energy="3.33" value="3.46"/>
+	<ve energy="3.32" value="3.51"/>
+	<ve energy="3.3"  value="3.56"/>
+	<ve energy="3.28" value="3.67"/>
+	<ve energy="3.26" value="4.09"/>
+	<ve energy="3.25" value="5.38"/>
+	<ve energy="3.23" value="7.66"/>
+	<ve energy="3.21" value="11.3"/>
+	<ve energy="3.2"  value="16.7"/>
+	<ve energy="3.18" value="24.4"/>
+	<ve energy="3.16" value="36.1"/>
+	<ve energy="3.15" value="52.2"/>
+	<ve energy="3.13" value="75.2"/>
+	<ve energy="3.12" value="107"/>
+	<ve energy="3.1"  value="151"/>
+	<ve energy="3.08" value="213"/>
+	<ve energy="3.07" value="294"/>
+	<ve energy="3.05" value="399"/>
+	<ve energy="3.04" value="567"/>
+	<ve energy="3.02" value="775"/>
+	<ve energy="3.01" value="933"/>
+	<ve energy="2.99" value="1.31e+003"/>
+	<ve energy="2.98" value="1.77e+003"/>
+	<ve energy="2.97" value="2.4e+003"/>
+	<ve energy="2.95" value="1e+004"/>
+	<ve energy="1.46" value="1e+004"/>
+      </propertyvector>
+      <propertyvector name="RAYLEIGH" unit="mm" energyunit="eV">
+	<ve energy="6.53" value="44.5"/>
+	<ve energy="6.46" value="45.4"/>
+	<ve energy="6.39" value="46.3"/>
+	<ve energy="6.33" value="47.2"/>
+	<ve energy="6.26" value="48.1"/>
+	<ve energy="6.2"  value="48.9"/>
+	<ve energy="6.14" value="49.8"/>
+	<ve energy="6.08" value="50.7"/>
+	<ve energy="6.02" value="51.6"/>
+	<ve energy="5.96" value="52.5"/>
+	<ve energy="5.9"  value="53.3"/>
+	<ve energy="5.85" value="54.2"/>
+	<ve energy="5.79" value="55.1"/>
+	<ve energy="5.74" value="56"/>
+	<ve energy="5.69" value="56.9"/>
+	<ve energy="5.64" value="57.7"/>
+	<ve energy="5.58" value="58.6"/>
+	<ve energy="5.54" value="59.5"/>
+	<ve energy="5.49" value="60.4"/>
+	<ve energy="5.44" value="61.3"/>
+	<ve energy="5.39" value="62.1"/>
+	<ve energy="5.34" value="63"/>
+	<ve energy="5.3"  value="63.9"/>
+	<ve energy="5.25" value="64.8"/>
+	<ve energy="5.21" value="65.6"/>
+	<ve energy="5.17" value="66.5"/>
+	<ve energy="5.12" value="67.4"/>
+	<ve energy="5.08" value="68.3"/>
+	<ve energy="5.04" value="69.2"/>
+	<ve energy="5"    value="70"/>
+	<ve energy="4.96" value="70.9"/>
+	<ve energy="4.92" value="71.8"/>
+	<ve energy="4.88" value="72.7"/>
+	<ve energy="4.84" value="73.6"/>
+	<ve energy="4.81" value="74.4"/>
+	<ve energy="4.77" value="75.3"/>
+	<ve energy="4.73" value="76.2"/>
+	<ve energy="4.7"  value="77.1"/>
+	<ve energy="4.66" value="78"/>
+	<ve energy="4.63" value="78.8"/>
+	<ve energy="4.59" value="79.7"/>
+	<ve energy="4.56" value="80.6"/>
+	<ve energy="4.52" value="81.5"/>
+	<ve energy="4.49" value="82.4"/>
+	<ve energy="4.46" value="83.2"/>
+	<ve energy="4.43" value="84.1"/>
+	<ve energy="4.4"  value="85"/>
+	<ve energy="4.37" value="85.9"/>
+	<ve energy="4.34" value="86.7"/>
+	<ve energy="4.31" value="87.6"/>
+	<ve energy="4.28" value="88.5"/>
+	<ve energy="4.25" value="89.4"/>
+	<ve energy="4.22" value="90.3"/>
+	<ve energy="4.19" value="91.1"/>
+	<ve energy="4.16" value="92"/>
+	<ve energy="4.13" value="92.9"/>
+	<ve energy="4.11" value="93.8"/>
+	<ve energy="4.08" value="94.7"/>
+	<ve energy="4.05" value="95.5"/>
+	<ve energy="4.03" value="96.4"/>
+	<ve energy="4"    value="97.3"/>
+	<ve energy="3.97" value="98.2"/>
+	<ve energy="3.95" value="99.1"/>
+	<ve energy="3.92" value="99.9"/>
+	<ve energy="3.9"  value="101"/>
+	<ve energy="3.87" value="102"/>
+	<ve energy="3.85" value="103"/>
+	<ve energy="3.83" value="103"/>
+	<ve energy="3.8"  value="104"/>
+	<ve energy="3.78" value="105"/>
+	<ve energy="3.76" value="106"/>
+	<ve energy="3.73" value="107"/>
+	<ve energy="3.71" value="108"/>
+	<ve energy="3.69" value="109"/>
+	<ve energy="3.67" value="110"/>
+	<ve energy="3.65" value="110"/>
+	<ve energy="3.63" value="111"/>
+	<ve energy="3.6"  value="112"/>
+	<ve energy="3.58" value="113"/>
+	<ve energy="3.56" value="114"/>
+	<ve energy="3.54" value="115"/>
+	<ve energy="3.52" value="116"/>
+	<ve energy="3.5"  value="117"/>
+	<ve energy="3.48" value="118"/>
+	<ve energy="3.46" value="118"/>
+	<ve energy="3.44" value="119"/>
+	<ve energy="3.42" value="120"/>
+	<ve energy="3.41" value="121"/>
+	<ve energy="3.39" value="122"/>
+	<ve energy="3.37" value="123"/>
+	<ve energy="3.35" value="124"/>
+	<ve energy="3.33" value="125"/>
+	<ve energy="3.32" value="125"/>
+	<ve energy="3.3"  value="126"/>
+	<ve energy="3.28" value="127"/>
+	<ve energy="3.26" value="128"/>
+	<ve energy="3.25" value="129"/>
+	<ve energy="3.23" value="130"/>
+	<ve energy="3.21" value="131"/>
+	<ve energy="3.2"  value="132"/>
+	<ve energy="3.18" value="132"/>
+	<ve energy="3.16" value="133"/>
+	<ve energy="3.15" value="134"/>
+	<ve energy="3.13" value="135"/>
+	<ve energy="3.12" value="136"/>
+	<ve energy="3.1"  value="137"/>
+	<ve energy="3.08" value="138"/>
+	<ve energy="3.07" value="139"/>
+	<ve energy="3.05" value="139"/>
+	<ve energy="3.04" value="140"/>
+	<ve energy="3.02" value="141"/>
+	<ve energy="3.01" value="142"/>
+	<ve energy="2.99" value="143"/>
+	<ve energy="2.98" value="144"/>
+	<ve energy="2.97" value="145"/>
+	<ve energy="2.95" value="146"/>
+	<ve energy="2.94" value="147"/>
+	<ve energy="2.92" value="147"/>
+	<ve energy="2.91" value="148"/>
+	<ve energy="2.9"  value="149"/>
+	<ve energy="2.88" value="150"/>
+	<ve energy="2.87" value="151"/>
+	<ve energy="2.86" value="152"/>
+	<ve energy="2.84" value="153"/>
+	<ve energy="2.83" value="154"/>
+	<ve energy="2.82" value="154"/>
+	<ve energy="2.81" value="155"/>
+	<ve energy="2.79" value="156"/>
+	<ve energy="2.78" value="157"/>
+	<ve energy="2.77" value="158"/>
+	<ve energy="2.76" value="159"/>
+	<ve energy="2.74" value="160"/>
+	<ve energy="2.73" value="161"/>
+	<ve energy="2.72" value="161"/>
+	<ve energy="2.71" value="162"/>
+	<ve energy="2.7"  value="163"/>
+	<ve energy="2.68" value="164"/>
+	<ve energy="2.67" value="165"/>
+	<ve energy="2.66" value="166"/>
+	<ve energy="2.65" value="167"/>
+	<ve energy="2.64" value="168"/>
+	<ve energy="2.63" value="169"/>
+	<ve energy="2.62" value="169"/>
+	<ve energy="2.6"  value="170"/>
+	<ve energy="2.59" value="171"/>
+	<ve energy="2.58" value="172"/>
+	<ve energy="2.57" value="173"/>
+	<ve energy="2.56" value="174"/>
+	<ve energy="2.55" value="175"/>
+	<ve energy="2.54" value="176"/>
+	<ve energy="2.53" value="176"/>
+	<ve energy="2.52" value="177"/>
+	<ve energy="2.51" value="178"/>
+	<ve energy="2.5"  value="179"/>
+	<ve energy="2.49" value="180"/>
+	<ve energy="2.48" value="181"/>
+	<ve energy="2.47" value="182"/>
+	<ve energy="2.46" value="183"/>
+	<ve energy="2.45" value="183"/>
+	<ve energy="2.44" value="184"/>
+	<ve energy="2.43" value="185"/>
+	<ve energy="2.42" value="186"/>
+	<ve energy="2.41" value="187"/>
+	<ve energy="2.4"  value="188"/>
+	<ve energy="2.39" value="189"/>
+	<ve energy="2.38" value="190"/>
+	<ve energy="2.38" value="190"/>
+	<ve energy="2.37" value="191"/>
+	<ve energy="2.36" value="192"/>
+	<ve energy="2.35" value="193"/>
+	<ve energy="2.34" value="194"/>
+	<ve energy="2.33" value="195"/>
+	<ve energy="2.32" value="196"/>
+	<ve energy="2.31" value="197"/>
+	<ve energy="2.3"  value="198"/>
+	<ve energy="2.3"  value="198"/>
+	<ve energy="2.29" value="199"/>
+	<ve energy="2.28" value="200"/>
+	<ve energy="2.27" value="201"/>
+	<ve energy="2.26" value="202"/>
+	<ve energy="2.25" value="203"/>
+	<ve energy="2.25" value="204"/>
+	<ve energy="2.24" value="205"/>
+	<ve energy="2.23" value="205"/>
+	<ve energy="2.22" value="206"/>
+	<ve energy="2.21" value="207"/>
+	<ve energy="2.21" value="208"/>
+	<ve energy="2.2"  value="209"/>
+	<ve energy="2.19" value="210"/>
+	<ve energy="2.18" value="211"/>
+	<ve energy="2.18" value="212"/>
+	<ve energy="2.17" value="212"/>
+	<ve energy="2.16" value="213"/>
+	<ve energy="2.15" value="214"/>
+	<ve energy="2.15" value="215"/>
+	<ve energy="2.14" value="216"/>
+	<ve energy="2.13" value="217"/>
+	<ve energy="2.12" value="218"/>
+	<ve energy="2.12" value="219"/>
+	<ve energy="2.11" value="220"/>
+	<ve energy="2.1"  value="220"/>
+	<ve energy="2.09" value="221"/>
+	<ve energy="2.09" value="222"/>
+	<ve energy="2.08" value="223"/>
+	<ve energy="2.07" value="224"/>
+	<ve energy="2.07" value="225"/>
+	<ve energy="2.06" value="226"/>
+	<ve energy="2.05" value="227"/>
+	<ve energy="2.05" value="227"/>
+	<ve energy="2.04" value="228"/>
+	<ve energy="2.03" value="229"/>
+	<ve energy="2.03" value="230"/>
+	<ve energy="2.02" value="231"/>
+	<ve energy="2.01" value="232"/>
+	<ve energy="2.01" value="233"/>
+	<ve energy="2"    value="234"/>
+	<ve energy="1.99" value="234"/>
+	<ve energy="1.99" value="235"/>
+	<ve energy="1.98" value="236"/>
+	<ve energy="1.97" value="237"/>
+	<ve energy="1.97" value="238"/>
+	<ve energy="1.96" value="239"/>
+	<ve energy="1.96" value="240"/>
+	<ve energy="1.95" value="241"/>
+	<ve energy="1.94" value="241"/>
+	<ve energy="1.94" value="242"/>
+	<ve energy="1.93" value="243"/>
+	<ve energy="1.93" value="244"/>
+	<ve energy="1.92" value="245"/>
+	<ve energy="1.91" value="246"/>
+	<ve energy="1.91" value="247"/>
+	<ve energy="1.9"  value="248"/>
+	<ve energy="1.9"  value="249"/>
+	<ve energy="1.89" value="249"/>
+	<ve energy="1.88" value="250"/>
+	<ve energy="1.88" value="251"/>
+	<ve energy="1.87" value="252"/>
+	<ve energy="1.87" value="253"/>
+	<ve energy="1.86" value="254"/>
+	<ve energy="1.86" value="255"/>
+	<ve energy="1.85" value="256"/>
+	<ve energy="1.85" value="256"/>
+	<ve energy="1.84" value="257"/>
+	<ve energy="1.83" value="258"/>
+	<ve energy="1.83" value="259"/>
+	<ve energy="1.82" value="260"/>
+	<ve energy="1.82" value="261"/>
+	<ve energy="1.81" value="262"/>
+	<ve energy="1.81" value="263"/>
+	<ve energy="1.8"  value="263"/>
+	<ve energy="1.8"  value="264"/>
+	<ve energy="1.79" value="265"/>
+	<ve energy="1.79" value="266"/>
+	<ve energy="1.78" value="267"/>
+	<ve energy="1.78" value="268"/>
+	<ve energy="1.77" value="269"/>
+	<ve energy="1.77" value="270"/>
+	<ve energy="1.76" value="270"/>
+	<ve energy="1.76" value="271"/>
+	<ve energy="1.75" value="272"/>
+	<ve energy="1.75" value="273"/>
+	<ve energy="1.74" value="274"/>
+	<ve energy="1.74" value="275"/>
+	<ve energy="1.73" value="276"/>
+	<ve energy="1.73" value="277"/>
+	<ve energy="1.72" value="278"/>
+	<ve energy="1.72" value="278"/>
+	<ve energy="1.71" value="279"/>
+	<ve energy="1.71" value="280"/>
+	<ve energy="1.7"  value="281"/>
+	<ve energy="1.7"  value="282"/>
+	<ve energy="1.69" value="283"/>
+	<ve energy="1.69" value="284"/>
+	<ve energy="1.68" value="285"/>
+	<ve energy="1.68" value="285"/>
+	<ve energy="1.68" value="286"/>
+	<ve energy="1.67" value="287"/>
+	<ve energy="1.67" value="288"/>
+	<ve energy="1.66" value="289"/>
+	<ve energy="1.66" value="290"/>
+	<ve energy="1.65" value="291"/>
+	<ve energy="1.65" value="292"/>
+	<ve energy="1.64" value="292"/>
+	<ve energy="1.64" value="293"/>
+	<ve energy="1.64" value="294"/>
+	<ve energy="1.63" value="295"/>
+	<ve energy="1.63" value="296"/>
+	<ve energy="1.62" value="297"/>
+	<ve energy="1.62" value="298"/>
+	<ve energy="1.61" value="299"/>
+	<ve energy="1.61" value="300"/>
+	<ve energy="1.61" value="300"/>
+	<ve energy="1.6"  value="301"/>
+	<ve energy="1.6"  value="302"/>
+	<ve energy="1.59" value="303"/>
+	<ve energy="1.59" value="304"/>
+	<ve energy="1.59" value="305"/>
+	<ve energy="1.58" value="306"/>
+	<ve energy="1.58" value="307"/>
+	<ve energy="1.57" value="307"/>
+	<ve energy="1.57" value="308"/>
+	<ve energy="1.57" value="309"/>
+	<ve energy="1.56" value="310"/>
+	<ve energy="1.56" value="311"/>
+	<ve energy="1.55" value="312"/>
+	<ve energy="1.55" value="313"/>
+	<ve energy="1.55" value="314"/>
+	<ve energy="1.54" value="314"/>
+	<ve energy="1.54" value="315"/>
+	<ve energy="1.53" value="316"/>
+	<ve energy="1.53" value="317"/>
+	<ve energy="1.53" value="318"/>
+	<ve energy="1.52" value="319"/>
+	<ve energy="1.52" value="320"/>
+	<ve energy="1.52" value="321"/>
+	<ve energy="1.51" value="321"/>
+	<ve energy="1.51" value="322"/>
+	<ve energy="1.5"  value="323"/>
+	<ve energy="1.5"  value="324"/>
+	<ve energy="1.5"  value="325"/>
+	<ve energy="1.49" value="326"/>
+	<ve energy="1.49" value="327"/>
+	<ve energy="1.49" value="328"/>
+	<ve energy="1.48" value="329"/>
+	<ve energy="1.48" value="329"/>
+	<ve energy="1.48" value="330"/>
+	<ve energy="1.47" value="331"/>
+	<ve energy="1.47" value="332"/>
+	<ve energy="1.47" value="333"/>
+	<ve energy="1.46" value="334"/>
+      </propertyvector>
+      <propertyvector name="RINDEX" energyunit="eV">
+	<ve energy="4.08" value="1.82"/>
+	<ve energy="1.70" value="1.82"/>
+      </propertyvector>
+    </propertiestable>
+  </material>
+
+  <material name="Air" density="1.29E-3" state="gas">  
+    <propertiestable>
+      <propertyvector name="ABSLENGTH" unit="m" energyunit="eV">
+	<ve energy="4.08" value="50"/>
+	<ve energy="1.70" value="50"/>
+      </propertyvector>
+      <propertyvector name="RINDEX" energyunit="eV">
+	<ve energy="4.08" value="1.000277"/>
+	<ve energy="1.70" value="1.000277"/>
+      </propertyvector>
+    </propertiestable>
+  </material>
+
+  <material name="Epoxy" density="1.0" state="solid">
+    <propertiestable>
+      <propertyvector name="ABSLENGTH" unit="m" energyunit="eV">
+	<ve energy="4.08" value="50"/>
+	<ve energy="1.70" value="50"/>
+      </propertyvector>
+      <propertyvector name="RINDEX" energyunit="eV">
+	<ve energy="4.08" value="1.52"/>
+	<ve energy="1.70" value="1.52"/>
+      </propertyvector>
+    </propertiestable>
+  </material>
+
+  <material name="Meltmount" density="1.0" state="solid">
+    <propertiestable>
+      <propertyvector name="ABSLENGTH" unit="m" energyunit="eV">
+	<ve energy="4.08" value="50"/>
+	<ve energy="1.80" value="50"/>
+      </propertyvector>
+      <propertyvector name="RINDEX" energyunit="eV">
+	<ve energy="4.08" value="1.704"/>
+	<ve energy="1.80" value="1.704"/>
+      </propertyvector>
+    </propertiestable>
+  </material>
+  
+  <material name="LSO2">
+    <propertiestable>
+      <property name="SCINTILLATIONYIELD" value="26000" unit="1/MeV"/>
+      <property name="RESOLUTIONSCALE" value="4.41"/>
+      <property name="FASTTIMECONSTANT" value="40" unit="ns"/>
+      <property name="YIELDRATIO" value="1"/>
+      <propertyvector name="FASTCOMPONENT" energyunit="eV">
+	<ve energy="2.95167" value="1"/>
+      </propertyvector>
+      <propertyvector name="ABSLENGTH" unit="m" energyunit="eV">
+	<ve energy="4.08" value="50"/>
+	<ve energy="1.84" value="50"/>
+      </propertyvector>
+      <propertyvector name="RINDEX" energyunit="eV">
+	<ve energy="4.08" value="1.82"/>
+	<ve energy="1.84" value="1.82"/>
+      </propertyvector>
+    </propertiestable>
+  </material>
+  
+  <material name="Silicon">
+    <propertiestable>
+      <propertyvector name="ABSLENGTH" unit="m" energyunit="eV">
+	<ve energy="4.08" value="50"/>
+	<ve energy="1.84" value="50"/>
+      </propertyvector>
+      <propertyvector name="RINDEX" energyunit="eV">
+	<ve energy="4.08" value="3.5"/>
+	<ve energy="1.84" value="3.5"/>
+      </propertyvector>
+    </propertiestable>
+  </material>
+  
+</materials>
+

@@ -1,0 +1,17 @@
+#
+#	P H A N T O M
+#
+
+/gate/world/daughters/name				Phantom
+/gate/world/daughters/insert 			cylinder
+#/gate/Phantom/geometry/setRmax			10.0 mm
+/gate/Phantom/geometry/setRmax			120.0 mm
+/gate/Phantom/geometry/setRmin 			0.0 mm
+/gate/Phantom/geometry/setHeight 		160.0 mm
+/gate/Phantom/placement/setTranslation	0 0 0 mm
+/gate/Phantom/setMaterial 				{PhantomMaterial}
+/gate/Phantom/vis/setVisible			1
+/gate/Phantom/vis/setColor 				white
+#/gate/Phantom/vis/forceSolid			1
+/gate/Phantom/vis/forceWireframe		1
+/gate/Phantom/attachPhantomSD

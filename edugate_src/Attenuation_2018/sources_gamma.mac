@@ -1,0 +1,35 @@
+#
+#Single intrinsic source; confined to crystal
+#
+
+/gate/source/addSource intrinsic
+
+# The particles emits by the source are gammas 
+/gate/source/intrinsic/gps/particle 		gamma 
+/gate/source/intrinsic/gps/energytype 		Mono 
+/gate/source/intrinsic/gps/monoenergy 		0.511 MeV 
+
+###/gate/source/intrinsic/setForcedHalfLife 6586 s
+
+/gate/source/intrinsic/gps/angtype 			iso
+/gate/source/intrinsic/gps/mintheta 		0. deg 
+/gate/source/intrinsic/gps/maxtheta 		180. deg 
+/gate/source/intrinsic/gps/minphi 			0. deg 
+/gate/source/intrinsic/gps/maxphi 			360. deg 
+
+/gate/source/intrinsic/gps/type 			Volume
+/gate/source/intrinsic/gps/shape 			Cylinder
+
+/gate/source/intrinsic/gps/radius 			60 mm
+
+#/gate/source/intrinsic/gps/halfx 			5 mm
+#/gate/source/intrinsic/gps/halfy 			30.2 mm
+/gate/source/intrinsic/gps/halfz 			5 mm
+/gate/source/intrinsic/gps/centre 			0. 0. 0. cm
+
+/gate/source/intrinsic/setActivity 			{SourceActivity} Bq
+
+# confine the gammas to the volume of the crystal
+#/gate/source/intrinsic/gps/confine 			crystal
+
+#/gate/source/intrinsic/visualize 			5000 red 2

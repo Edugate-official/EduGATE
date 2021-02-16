@@ -1,0 +1,44 @@
+#
+#	C A M E R A
+#
+
+#	Type: scanner
+
+
+/gate/world/daughters/name 				scanner
+/gate/world/daughters/insert 			box
+/gate/scanner/geometry/setXLength  		30. cm
+/gate/scanner/geometry/setYLength 		30. cm
+/gate/scanner/geometry/setZLength 		30. cm
+/gate/scanner/placement/setTranslation 	0. 0. 0. cm
+/gate/scanner/setMaterial 				Vacuum
+/gate/scanner/vis/setColor 				white
+/gate/scanner/vis/forceWireframe
+/gate/scanner/vis/setVisible			0
+
+# CRYSTAL
+# Create the crystal volume
+
+/gate/scanner/daughters/name 			crystal
+/gate/scanner/daughters/insert 			cylinder
+/gate/crystal/geometry/setRmax 			100. mm
+/gate/crystal/geometry/setRmin 			20. mm
+/gate/crystal/geometry/setHeight 		200 mm
+/gate/crystal/placement/setTranslation 	0. 0. 0. cm
+/gate/crystal/setMaterial				{Medium}
+/gate/crystal/vis/setColor 				yellow
+/gate/crystal/vis/forceWireframe	1
+/gate/crystal/vis/setVisible			1
+/gate/crystal/vis/forceSolid	0
+
+/gate/systems/scanner/level2/attach 	crystal
+
+/gate/crystal/attachCrystalSD
+
+/gate/scanner/attachPhantomSD
+
+/gate/systems/scanner/describe
+
+# define magnetic field at the center of the system:
+
+/gate/geometry/setMagField {B0_x} {B0_y} {B0_z} T

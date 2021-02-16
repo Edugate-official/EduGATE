@@ -1,0 +1,29 @@
+#
+#	S O U R C E S
+#
+
+# source: ion	
+/gate/source/addSource 							IonSource
+
+/gate/source/IonSource/gps/type					Volume
+/gate/source/IonSource/gps/shape				Sphere
+/gate/source/IonSource/gps/radius				0.125 mm
+
+## Iodine-131
+/gate/source/IonSource/gps/particle				ion
+/gate/source/IonSource/gps/ion 					53 131 0 0
+/gate/source/IonSource/setForcedUnstableFlag 	true
+/gate/source/IonSource/setForcedHalfLife 		692988.48 s
+/gate/source/IonSource/gps/energytype 			Mono
+/gate/source/IonSource/gps/monoenergy 			0. MeV
+/gate/source/IonSource/setActivity 				{SourceActivity}
+
+/gate/source/IonSource/gps/angtype				iso
+/gate/source/IonSource/gps/mintheta				60. deg
+/gate/source/IonSource/gps/maxtheta 			120. deg
+/gate/source/IonSource/gps/minphi 				150. deg
+/gate/source/IonSource/gps/maxphi 				210. deg
+
+/gate/source/list
+
+/gate/source/IonSource/gps/confine 				source_vol

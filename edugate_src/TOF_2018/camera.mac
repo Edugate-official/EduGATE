@@ -1,0 +1,72 @@
+# C A M E R A
+
+/gate/world/daughters/name                        cylindricalPET
+/gate/world/daughters/insert                      cylinder
+/gate/cylindricalPET/geometry/setRmin			        50 mm
+/gate/cylindricalPET/geometry/setRmax			        60 mm
+/gate/cylindricalPET/geometry/setHeight			      10 mm
+/gate/cylindricalPET/setMaterial				          Vacuum
+/gate/cylindricalPET/vis/setColor				          yellow
+/gate/cylindricalPET/vis/forceWireframe			      1
+/gate/cylindricalPET/vis/setVisible				        1
+/gate/cylindricalPET/placement/setTranslation	    0.0 0.0 0.0 cm
+
+#	Cassette
+
+/gate/cylindricalPET/daughters/name				        cassette
+/gate/cylindricalPET/daughters/insert			        box
+/gate/cassette/geometry/setXLength				        10 mm
+/gate/cassette/geometry/setYLength				        4 mm
+/gate/cassette/geometry/setZLength				        4 mm
+/gate/cassette/setMaterial						            Vacuum
+/gate/cassette/vis/setColor						            yellow
+/gate/cassette/vis/forceWireframe				          1
+/gate/cassette/vis/setVisible					            1
+/gate/cassette/placement/setTranslation			      55 0 0 mm
+
+#	Module
+
+/gate/cassette/daughters/name 					         module
+/gate/cassette/daughters/insert 				         box
+/gate/module/placement/setTranslation 			     0 0.0 0.0 mm
+/gate/module/geometry/setXLength 				         10 mm
+/gate/module/geometry/setYLength 				         4 mm
+/gate/module/geometry/setZLength 				         4 mm
+/gate/module/setMaterial 						             Vacuum
+/gate/module/vis/forceWireframe					         1
+/gate/module/vis/setVisible						           1
+/gate/module/vis/setColor 						           green
+
+#	LSO crystal
+
+/gate/module/daughters/name 					           crystal
+/gate/module/daughters/insert 					         box
+/gate/crystal/placement/setTranslation 			     0 0.0 0.0 mm
+/gate/crystal/geometry/setXLength    			       10 mm
+/gate/crystal/geometry/setYLength    			       4 mm
+/gate/crystal/geometry/setZLength    			       4 mm
+/gate/crystal/setMaterial 						           {CrysMat}
+/gate/crystal/vis/forceSolid					           1
+#/gate/crystal/vis/forceWireframe				         1
+/gate/crystal/vis/setVisible					           1
+/gate/crystal/vis/setColor 						           red
+
+# A T T A C H
+
+/gate/systems/cylindricalPET/rsector/attach		   cassette
+/gate/systems/cylindricalPET/module/attach		   module
+/gate/systems/cylindricalPET/crystal/attach		   crystal
+
+
+#	R E P E A T   C A S S E T T E ( R S E C T O R )
+
+/gate/cassette/repeaters/insert 				        ring
+/gate/cassette/ring/setRepeatNumber 			      {Nb_Det}
+/gate/cassette/ring/setAngularSpan 				      360 deg
+
+#	A T T A C H    C R Y S T A L  SD
+# or which part of the detector is used to store data interactions?
+/gate/crystal/attachCrystalSD
+
+# D E S C R I B E
+/gate/systems/cylindricalPET/describe

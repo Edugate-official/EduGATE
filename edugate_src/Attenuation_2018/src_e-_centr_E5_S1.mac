@@ -1,0 +1,61 @@
+#
+#	S O U R C E S
+#
+
+# source: defining 5 spherical Electron sources 
+
+/gate/source/addSource 						ElectronSource1
+/gate/source/ElectronSource1/gps/type			Volume
+/gate/source/ElectronSource1/gps/shape			Sphere
+/gate/source/ElectronSource1/gps/radius		0.0 mm
+/gate/source/ElectronSource1/gps/centre 		0. 0. 0. cm
+/gate/source/ElectronSource1/gps/particle		e-
+/gate/source/ElectronSource1/gps/energytype 	Mono
+/gate/source/ElectronSource1/gps/monoenergy 	10 keV
+/gate/source/ElectronSource1/setActivity 		{Src_Act} Bq
+/gate/source/ElectronSource1/gps/angtype		iso
+
+/gate/source/addSource 						ElectronSource2
+/gate/source/ElectronSource2/gps/type			Volume
+/gate/source/ElectronSource2/gps/shape			Sphere
+/gate/source/ElectronSource2/gps/radius		0.0 mm
+/gate/source/ElectronSource2/gps/centre 		0. 0. 0. cm
+/gate/source/ElectronSource2/gps/particle		e-
+/gate/source/ElectronSource2/gps/energytype 	Mono
+/gate/source/ElectronSource2/gps/monoenergy 	150 keV
+/gate/source/ElectronSource2/setActivity 		{Src_Act} Bq
+/gate/source/ElectronSource2/gps/angtype		iso
+
+/gate/source/addSource 						ElectronSource3
+/gate/source/ElectronSource3/gps/type			Volume
+/gate/source/ElectronSource3/gps/shape			Sphere
+/gate/source/ElectronSource3/gps/radius		0.0 mm
+/gate/source/ElectronSource3/gps/centre 		0. 0. 0. cm
+/gate/source/ElectronSource3/gps/particle		e-
+/gate/source/ElectronSource3/gps/energytype 	Mono
+/gate/source/ElectronSource3/gps/monoenergy 	400 keV
+/gate/source/ElectronSource3/setActivity 		{Src_Act} Bq
+/gate/source/ElectronSource3/gps/angtype		iso
+
+/gate/source/addSource 						ElectronSource4
+/gate/source/ElectronSource4/gps/type			Volume
+/gate/source/ElectronSource4/gps/shape			Sphere
+/gate/source/ElectronSource4/gps/radius		0.0 mm
+/gate/source/ElectronSource4/gps/centre 		0. 0. 0. cm
+/gate/source/ElectronSource4/gps/particle		e-
+/gate/source/ElectronSource4/gps/energytype 	Mono
+/gate/source/ElectronSource4/gps/monoenergy 	700 keV
+/gate/source/ElectronSource4/setActivity 		{Src_Act} Bq
+/gate/source/ElectronSource4/gps/angtype		iso
+
+/gate/source/addSource 						ElectronSource5
+/gate/source/ElectronSource5/gps/type			Volume
+/gate/source/ElectronSource5/gps/shape			Sphere
+/gate/source/ElectronSource5/gps/radius		0.0 mm
+/gate/source/ElectronSource5/gps/centre 		0. 0. 0. cm
+/gate/source/ElectronSource5/gps/particle		e-
+/gate/source/ElectronSource5/gps/energytype 	Mono
+/gate/source/ElectronSource5/gps/monoenergy 	1000 keV
+/gate/source/ElectronSource5/setActivity 		{Src_Act} Bq
+/gate/source/ElectronSource5/gps/angtype		iso
+

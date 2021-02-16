@@ -1,0 +1,24 @@
+#
+#	S O U R C E S
+#
+
+# source: defining spherical gamma source
+
+/gate/source/addSource 					GammaSource
+/gate/source/GammaSource/gps/type		Volume
+/gate/source/GammaSource/gps/shape		Sphere
+/gate/source/GammaSource/gps/radius		0.125 mm
+/gate/source/GammaSource/gps/centre 	0. 0. 0. cm
+/gate/source/GammaSource/gps/particle	gamma
+/gate/source/GammaSource/gps/energytype Mono
+/gate/source/GammaSource/gps/monoenergy {SourceEnergy} keV
+/gate/source/GammaSource/setActivity 	{SourceActivity} Bq
+/gate/source/GammaSource/gps/angtype	iso
+/gate/source/GammaSource/gps/mintheta	0. deg
+/gate/source/GammaSource/gps/maxtheta 	180. deg
+/gate/source/GammaSource/gps/minphi 	0. deg
+/gate/source/GammaSource/gps/maxphi 	360. deg
+
+/gate/source/list
+
+#/gate/source/GammaSource/gps/confine 	source_vol

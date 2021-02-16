@@ -1,0 +1,29 @@
+#
+#Single intrinsic source; confined to crystal
+#
+
+/gate/source/addSource intrinsic
+/gate/source/intrinsic/gps/particle 		ion
+/gate/source/intrinsic/gps/ion 				71 176 0 0
+/gate/source/intrinsic/gps/monoenergy 		0. keV #Super important!
+/gate/source/intrinsic/gps/energytype 		Mono
+/gate/source/intrinsic/gps/number 			1
+ 
+/gate/source/intrinsic/gps/angtype 			iso
+/gate/source/intrinsic/gps/mintheta 		0. deg 
+/gate/source/intrinsic/gps/maxtheta 		180. deg 
+/gate/source/intrinsic/gps/minphi 			0. deg 
+/gate/source/intrinsic/gps/maxphi 			360. deg 
+
+/gate/source/intrinsic/gps/type 			Volume
+/gate/source/intrinsic/gps/shape 			Cylinder
+/gate/source/intrinsic/gps/radius 			60 mm
+#/gate/source/intrinsic/gps/halfx 			5 mm
+#/gate/source/intrinsic/gps/halfy 			30.2 mm
+/gate/source/intrinsic/gps/halfz 			5 mm
+/gate/source/intrinsic/gps/centre 			0. 0. 0. cm
+/gate/source/intrinsic/setActivity 			{SourceActivity} Bq
+
+# confine the Lu-176 background to the crystal 
+/gate/source/intrinsic/gps/confine 			crystal
+#/gate/source/intrinsic/visualize 5000 red 2

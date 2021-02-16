@@ -1,0 +1,19 @@
+#
+#	V I S U A L I S A T I O N
+#
+#  save final scene
+
+/vis/viewer/set/viewpointThetaPhi	0 90
+/vis/viewer/zoom 1.
+/vis/ogl/set/printFilename view_0_90
+/vis/ogl/printEPS
+
+/vis/viewer/set/viewpointThetaPhi	30 30
+/vis/viewer/zoom 0.5
+/vis/ogl/set/printFilename view_30_30
+/vis/ogl/printEPS
+
+/vis/viewer/set/viewpointThetaPhi	-45 -45
+/vis/viewer/zoom 1.5
+/vis/ogl/set/printFilename view_m45_m45
+/vis/ogl/printEPS

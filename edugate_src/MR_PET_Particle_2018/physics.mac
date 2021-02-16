@@ -1,0 +1,63 @@
+#
+#       P H Y S I C S
+#
+
+#### GATE70 ###
+
+#/gate/physics/addPhysicsList empenelope
+
+/gate/physics/addProcess Compton gamma
+/gate/physics/processes/Compton/setModel PenelopeModel
+
+/gate/physics/addProcess PhotoElectric
+/gate/physics/processes/PhotoElectric/setModel PenelopeModel
+
+/gate/physics/addProcess ElectronIonisation e-
+/gate/physics/addProcess ElectronIonisation e+
+/gate/physics/processes/ElectronIonisation/setModel PenelopeModel
+
+/gate/physics/addProcess eMultipleScattering e-
+/gate/physics/addProcess eMultipleScattering e+
+
+/gate/physics/addProcess Bremsstrahlung
+/gate/physics/processes/Bremsstrahlung/setModel PenelopeModel e-
+/gate/physics/processes/Bremsstrahlung/setModel PenelopeModel e+
+
+#/gate/physics/addProcess PositronAnnihilation
+
+/control/execute {Annihilation}_physics.mac
+
+/gate/physics/addProcess GammaConversion
+/gate/physics/processes/GammaConversion/setModel PenelopeModel
+    
+/gate/physics/addProcess IonIonisation
+/gate/physics/processes/IonIonisation/setStepFunction GenericIon 0.1 0.02 mm
+
+/gate/physics/addProcess RadioactiveDecay
+
+/gate/physics/addAtomDeexcitation
+#/process/em/fluo  false
+#/process/em/auger false
+#/process/em/pixe  false
+
+#/gate/physics/processList Initialized e+
+
+#
+#       C U T S
+#
+
+#/gate/physics/displayCuts
+
+#/gate/physics/Gamma/SetCutInRegion      world 10 mm
+#/gate/physics/Electron/SetCutInRegion   world 10 mm
+#/gate/physics/Positron/SetCutInRegion   world 10 mm
+#/gate/physics/Proton/SetCutInRegion     world 10 mm
+
+##/gate/physics/processList 
+
+#OUTPUT (for debug etc.)
+#in file
+#/gate/physics/print phys.txt
+#on terminal
+##/gate/physics/print /dev/stdout
+

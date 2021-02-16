@@ -1,0 +1,21 @@
+#
+#	D I G I T I Z E R 
+#
+
+/gate/digitizer/Singles/insert adder
+
+/control/execute {PileupOnOff}.mac
+
+/gate/digitizer/Singles/insert blurring
+/gate/digitizer/Singles/blurring/setResolution {E_blur}
+/gate/digitizer/Singles/blurring/setEnergyOfReference 140. keV
+
+/gate/digitizer/Singles/insert spblurring
+/gate/digitizer/Singles/spblurring/setSpresolution {SP_blur} mm
+/gate/digitizer/Singles/spblurring/verbose 0
+
+/gate/digitizer/Singles/insert thresholder
+/gate/digitizer/Singles/thresholder/setThreshold {E_low} keV
+
+/gate/digitizer/Singles/insert upholder
+/gate/digitizer/Singles/upholder/setUphold {E_up} keV

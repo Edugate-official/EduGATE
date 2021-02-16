@@ -1,0 +1,20 @@
+/control/alias ViewPointThetaPhi  0 90
+/control/alias VisuOnOff  novisu
+/control/alias Src_Act  10000 Bq
+/control/alias CamType  camera_Tc
+/control/alias x_pos  10.0
+/control/alias CollMat  Lead
+/control/alias CrysMat  NaI
+/control/alias PhanMat  Vacuum
+/control/alias PhanRmax  50 mm
+/control/alias PhanRmin  49 mm
+/control/alias SrcVolMat  Air
+/control/alias SrcType  src_gamma_5_lim_ang
+/control/alias Src_E  140
+/control/alias E_blur  0.1
+/control/alias SP_blur  2.0
+/control/alias E_low  120
+/control/alias E_up  160
+/control/alias PileupOnOff  no_pile_up
+/control/alias t_slice  1.0
+/control/alias t_stop   10.0

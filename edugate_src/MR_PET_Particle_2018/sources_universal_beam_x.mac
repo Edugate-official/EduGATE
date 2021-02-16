@@ -1,0 +1,20 @@
+#
+#	S O U R C E S
+#
+
+# source: Universal
+/gate/source/addSource 						UniversalSource
+
+#/gate/source/UniversalSource/gps/type		Volume
+#/gate/source/UniversalSource/gps/shape		Sphere
+#/gate/source/UniversalSource/gps/radius	0.125 mm
+
+/gate/source/UniversalSource/gps/centre 	0. 0. 0. cm
+/gate/source/UniversalSource/gps/particle	{particle}
+/gate/source/UniversalSource/gps/energytype Mono
+/gate/source/UniversalSource/gps/monoenergy {SourceEnergy} keV
+/gate/source/UniversalSource/setActivity 	{SourceActivity} Bq
+/gate/source/UniversalSource/gps/type       Beam
+/gate/source/UniversalSource/gps/direction  1 0 0
+
+/gate/source/list

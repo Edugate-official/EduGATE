@@ -1,0 +1,122 @@
+#
+#	C A M E R A
+#
+
+#	Type: SPECThead
+
+
+/gate/world/daughters/name 						SPECThead
+/gate/world/daughters/insert 					box
+/gate/SPECThead/geometry/setXLength  			7. cm
+/gate/SPECThead/geometry/setYLength 			21. cm
+/gate/SPECThead/geometry/setZLength 			30. cm
+/gate/SPECThead/placement/setTranslation 		{x_pos} 0. 0. cm
+/gate/SPECThead/setMaterial 					Air
+/gate/SPECThead/vis/setColor 					white
+/gate/SPECThead/vis/forceWireframe
+/gate/SPECThead/vis/setVisible					0
+
+# Shielding
+# Create the shielding volume
+
+/gate/SPECThead/daughters/name 					shielding
+/gate/SPECThead/daughters/insert 				box
+/gate/shielding/geometry/setXLength  			7. cm
+/gate/shielding/geometry/setYLength 			21. cm
+/gate/shielding/geometry/setZLength 			30. cm
+/gate/shielding/placement/setTranslation  		0. 0. 0. cm
+/gate/shielding/setMaterial 					Lead
+/gate/shielding/vis/setColor 					red
+/gate/shielding/vis/forceWireframe
+#/gate/shielding/vis/forceSolid
+
+# Collimator - specifications usefull for Tc-99m
+# Create a full volume defining the shape of the collimator
+
+/gate/SPECThead/daughters/name 					collimator
+/gate/SPECThead/daughters/insert 				box
+/gate/collimator/geometry/setXLength 			3. cm
+/gate/collimator/geometry/setYLength 			19. cm
+/gate/collimator/geometry/setZLength 			28. cm
+/gate/collimator/placement/setTranslation  		-2. 0. 0. cm
+/gate/collimator/setMaterial 					{CollMat}
+/gate/collimator/vis/setColor 					blue
+#/gate/collimator/vis/forceWireframe
+/gate/collimator/vis/forceSolid
+
+# Insert the first hole of air in the collimator
+/gate/collimator/daughters/name 				hole
+/gate/collimator/daughters/insert 				hexagone
+/gate/hole/geometry/setHeight 					3. cm
+/gate/hole/geometry/setRadius 					.15 cm
+/gate/hole/placement/setRotationAxis 			0 1 0
+/gate/hole/placement/setRotationAngle 			90 deg
+/gate/hole/setMaterial 							Air
+
+# Repeat the hole in an array
+/gate/hole/repeaters/insert 					cubicArray
+/gate/hole/cubicArray/setRepeatNumberX 			1
+/gate/hole/cubicArray/setRepeatNumberY 			52
+/gate/hole/cubicArray/setRepeatNumberZ 			44
+/gate/hole/cubicArray/setRepeatVector 			0. 0.36  0.624 cm
+
+# Repeat these holes in a linear
+/gate/hole/repeaters/insert 					linear
+/gate/hole/linear/setRepeatNumber 				2
+/gate/hole/linear/setRepeatVector 				0. 0.18 0.312 cm
+
+# CRYSTAL
+# Create the crystal volume
+
+/gate/SPECThead/daughters/name 					crystal
+/gate/SPECThead/daughters/insert				box
+/gate/crystal/geometry/setXLength 				1. cm
+/gate/crystal/geometry/setYLength  				19. cm
+/gate/crystal/geometry/setZLength  				28. cm
+/gate/crystal/placement/setTranslation  		0. 0. 0. cm
+/gate/crystal/setMaterial 						{CrysMat}
+/gate/crystal/vis/setColor 						yellow
+#/gate/crystal/vis/forceWireframe
+/gate/crystal/vis/forceSolid
+
+# BACK-COMPARTMENT
+# Create the back-compartment volume
+
+/gate/SPECThead/daughters/name 					compartment
+/gate/SPECThead/daughters/insert 				box
+/gate/compartment/geometry/setXLength 			2.5 cm
+/gate/compartment/geometry/setYLength 			19. cm
+/gate/compartment/geometry/setZLength 			28. cm
+/gate/compartment/placement/setTranslation   	1.75 0. 0. cm
+/gate/compartment/setMaterial 					Glass
+/gate/compartment/vis/setColor 					grey
+#/gate/compartment/vis/forceWireframe
+/gate/compartment/vis/forceSolid
+
+# TABLE
+# Create the table volume
+
+/gate/world/daughters/name 						table
+/gate/world/daughters/insert 					box
+/gate/table/geometry/setXLength 				0.6 cm
+/gate/table/geometry/setYLength 				8. cm
+/gate/table/geometry/setZLength 				34. cm
+/gate/table/placement/setRotationAxis 			0 0 1
+/gate/table/placement/setRotationAngle 			90 deg
+/gate/table/placement/setTranslation 			0. -5.3 0. cm
+/gate/table/setMaterial 						Glass
+/gate/table/vis/setColor 						grey
+#/gate/table/vis/forceWireframe
+/gate/table/vis/forceSolid
+
+/gate/systems/SPECThead/crystal/attach 			crystal
+
+/gate/crystal/attachCrystalSD
+
+/gate/table/attachPhantomSD
+/gate/compartment/attachPhantomSD
+/gate/shielding/attachPhantomSD
+/gate/SPECThead/attachPhantomSD
+/gate/collimator/attachPhantomSD
+
+/gate/systems/SPECThead/describe

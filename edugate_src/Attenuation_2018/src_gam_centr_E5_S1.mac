@@ -1,0 +1,61 @@
+#
+#	S O U R C E S
+#
+
+# source: defining 5 spherical gamma sources 
+
+/gate/source/addSource 						GammaSource1
+/gate/source/GammaSource1/gps/type			Volume
+/gate/source/GammaSource1/gps/shape			Sphere
+/gate/source/GammaSource1/gps/radius		0.0 mm
+/gate/source/GammaSource1/gps/centre 		0. 0. 0. cm
+/gate/source/GammaSource1/gps/particle		gamma
+/gate/source/GammaSource1/gps/energytype 	Mono
+/gate/source/GammaSource1/gps/monoenergy 	30 keV
+/gate/source/GammaSource1/setActivity 		{Src_Act} Bq
+/gate/source/GammaSource1/gps/angtype		iso
+
+/gate/source/addSource 						GammaSource2
+/gate/source/GammaSource2/gps/type			Volume
+/gate/source/GammaSource2/gps/shape			Sphere
+/gate/source/GammaSource2/gps/radius		0.0 mm
+/gate/source/GammaSource2/gps/centre 		0. 0. 0. cm
+/gate/source/GammaSource2/gps/particle		gamma
+/gate/source/GammaSource2/gps/energytype 	Mono
+/gate/source/GammaSource2/gps/monoenergy 	140 keV
+/gate/source/GammaSource2/setActivity 		{Src_Act} Bq
+/gate/source/GammaSource2/gps/angtype		iso
+
+/gate/source/addSource 						GammaSource3
+/gate/source/GammaSource3/gps/type			Volume
+/gate/source/GammaSource3/gps/shape			Sphere
+/gate/source/GammaSource3/gps/radius		0.0 mm
+/gate/source/GammaSource3/gps/centre 		0. 0. 0. cm
+/gate/source/GammaSource3/gps/particle		gamma
+/gate/source/GammaSource3/gps/energytype 	Mono
+/gate/source/GammaSource3/gps/monoenergy 	364 keV
+/gate/source/GammaSource3/setActivity 		{Src_Act} Bq
+/gate/source/GammaSource3/gps/angtype		iso
+
+/gate/source/addSource 						GammaSource4
+/gate/source/GammaSource4/gps/type			Volume
+/gate/source/GammaSource4/gps/shape			Sphere
+/gate/source/GammaSource4/gps/radius		0.0 mm
+/gate/source/GammaSource4/gps/centre 		0. 0. 0. cm
+/gate/source/GammaSource4/gps/particle		gamma
+/gate/source/GammaSource4/gps/energytype 	Mono
+/gate/source/GammaSource4/gps/monoenergy 	511 keV
+/gate/source/GammaSource4/setActivity 		{Src_Act} Bq
+/gate/source/GammaSource4/gps/angtype		iso
+
+/gate/source/addSource 						GammaSource5
+/gate/source/GammaSource5/gps/type			Volume
+/gate/source/GammaSource5/gps/shape			Sphere
+/gate/source/GammaSource5/gps/radius		0.0 mm
+/gate/source/GammaSource5/gps/centre 		0. 0. 0. cm
+/gate/source/GammaSource5/gps/particle		gamma
+/gate/source/GammaSource5/gps/energytype 	Mono
+/gate/source/GammaSource5/gps/monoenergy 	1200 keV
+/gate/source/GammaSource5/setActivity 		{Src_Act} Bq
+/gate/source/GammaSource5/gps/angtype		iso
+

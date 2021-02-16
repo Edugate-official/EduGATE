@@ -1,0 +1,38 @@
+#
+#	S O U R C E S
+#
+
+# source: ion
+/gate/source/addSource 			        IonSource
+
+/gate/source/IonSource/setActivity 	     {SourceActivity} Bq
+
+
+/gate/source/IonSource/gps/type			Volume
+/gate/source/IonSource/gps/shape		Sphere
+/gate/source/IonSource/gps/radius		0.1 mm
+#/gate/source/IonSource/gps/radius		{SourceRad}
+/gate/source/IonSource/gps/centre 		0.0 0.0 0.0 cm
+
+##
+## universal ion source
+## with arbitrary halflife
+##
+/gate/source/IonSource/gps/particle		ion
+/gate/source/IonSource/gps/ion 			25 52 0 0
+/gate/source/IonSource/setForcedUnstableFlag 	true
+/gate/source/IonSource/setForcedHalfLife 	99999999.0 s
+/gate/source/IonSource/gps/energytype 		Mono
+/gate/source/IonSource/gps/monoenergy 		0. MeV
+/gate/source/IonSource/gps/number 		1
+
+/gate/source/IonSource/gps/angtype		iso
+/gate/source/IonSource/gps/mintheta		0. deg
+/gate/source/IonSource/gps/maxtheta 	180. deg
+/gate/source/IonSource/gps/minphi 		0. deg
+/gate/source/IonSource/gps/maxphi 		360. deg
+
+/gate/source/list
+
+#/gate/source/IonSource/gps/confine 		source_vol
+

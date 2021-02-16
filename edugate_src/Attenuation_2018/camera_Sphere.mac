@@ -1,0 +1,50 @@
+#
+#	C A M E R A
+#
+
+#	Type: scanner
+
+
+/gate/world/daughters/name 				scanner
+/gate/world/daughters/insert 			box
+/gate/scanner/geometry/setXLength  		50. cm
+/gate/scanner/geometry/setYLength 		50. cm
+/gate/scanner/geometry/setZLength 		50. cm
+/gate/scanner/placement/setTranslation 	0. 0. 0. cm
+/gate/scanner/setMaterial 				Vacuum
+/gate/scanner/vis/setColor 				white
+/gate/scanner/vis/forceWireframe
+/gate/scanner/vis/setVisible			1
+
+# CRYSTAL
+# Create the crystal volume
+
+/gate/scanner/daughters/name 			crystal
+/gate/scanner/daughters/insert			sphere
+#/gate/crystal/geometry/setRmax			120 mm
+/gate/crystal/geometry/setRmax			{Rad} mm
+/gate/crystal/geometry/setRmin			0 mm
+
+/gate/crystal/geometry/setPhiStart		0.0 deg
+/gate/crystal/geometry/setDeltaPhi		360.0 deg
+
+/gate/crystal/setMaterial				{CrysMat}
+
+#/gate/crystal/repeaters/insert 			ring 
+#/gate/crystal/ring/setRepeatNumber		1
+#/gate/crystal/ring/setPoint1 			0. 0. 0. mm 
+#/gate/crystal/ring/setPoint2 			0. 0. 1. mm 
+
+/gate/crystal/vis/setColor				yellow
+/gate/crystal/vis/setVisible			1
+#/gate/crystal/vis/forceWireframe
+/gate/crystal/vis/forceSolid
+
+/gate/systems/scanner/level2/attach 	crystal
+
+/gate/crystal/attachCrystalSD
+
+/gate/scanner/attachPhantomSD
+
+/gate/systems/scanner/describe
+

@@ -1,0 +1,6 @@
+#
+#	add pile-up 
+#
+/gate/digitizer/Singles/insert pileup
+/gate/digitizer/Singles/pileup/setDepth 1
+/gate/digitizer/Singles/pileup/setPileup 100 ns

@@ -1,0 +1,31 @@
+#
+#	D I G I T I Z E R 
+#
+
+/gate/digitizer/Singles/insert 							adder
+/gate/digitizer/Singles/insert							readout
+/gate/digitizer/Singles/readout/setDepth				3
+
+/gate/digitizer/Singles/insert							blurring
+/gate/digitizer/Singles/blurring/setResolution			{E_blur}
+/gate/digitizer/Singles/blurring/setEnergyOfReference	511. keV
+
+/gate/digitizer/Singles/insert							thresholder
+/gate/digitizer/Singles/thresholder/setThreshold 		{E_low} keV
+
+/gate/digitizer/Singles/insert							upholder
+/gate/digitizer/Singles/upholder/setUphold				{E_up} keV
+
+#	C O I N C I    S O R T E R
+
+/gate/digitizer/Coincidences/setWindow 					20. ns
+/gate/digitizer/Coincidences/minSectorDifference 		1
+/gate/digitizer/Coincidences/MultiplesPolicy			takeWinnerOfGoods
+
+/gate/digitizer/name									delay
+/gate/digitizer/insert									coincidenceSorter
+/gate/digitizer/delay/setWindow 						120. ns
+/gate/digitizer/delay/setOffset 						500. ns
+/gate/digitizer/delay/MultiplesPolicy					takeWinnerOfGoods
+
+

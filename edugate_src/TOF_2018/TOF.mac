@@ -1,0 +1,62 @@
+#config
+/control/execute configuration.mac
+/control/alias RootFileName  TOF_{Nb_Det}_{CrysMat}_{PhanMat}_{SrcVolMat}_{Phan_Src_XPos}_{SrcType}_{Src_E}_{Src_Act}_{E_blur}_{E_low}_{E_up}_{t_blur}_{t_slice}_{t_stop}
+/control/execute {VisuOnOff}.mac
+
+#materials
+/gate/geometry/setMaterialDatabase ./GateMaterials.db
+
+#execute surroundings
+/control/execute world.mac
+/control/execute camera.mac
+/control/execute phantom.mac
+
+#add physics
+/gate/physics/addPhysicsList emstandard_opt3
+/gate/physics/addProcess RadioactiveDecay
+
+#init
+/gate/run/initialize
+
+#execute
+/control/execute digitizer.mac
+/control/execute {SrcType}.mac
+
+#	V E R B O S I T Y
+
+/gate/verbose Physic    0
+/gate/verbose Cuts      0
+/gate/verbose Actor     0
+/gate/verbose SD        0
+/gate/verbose Actions   0
+/gate/verbose Step      0
+/gate/verbose Error     0
+/gate/verbose Warning   0
+/gate/verbose Output    0
+/gate/verbose Core      0
+
+/gate/output/verbose	  2
+/run/verbose 			      0
+/event/verbose			    0
+/tracking/verbose		    0
+
+#	O U T P U T
+
+/gate/output/root/enable
+/gate/output/root/setFileName 				      {RootFileName}
+/gate/output/root/setRootHitFlag			      1
+/gate/output/root/setRootSinglesFlag		    1
+/gate/output/root/setRootCoincidencesFlag	  1
+/gate/output/root/setRootdelayFlag			    1
+
+#  R A N D O M
+
+/gate/random/setEngineName 		              MersenneTwister
+/gate/random/setEngineSeed 		              auto
+/gate/random/verbose 			                  1
+
+#	S T A R T
+/gate/application/setTimeSlice		          {t_slice} s
+/gate/application/setTimeStart		          0.0	s
+/gate/application/setTimeStop		            {t_stop} s
+/gate/application/startDAQ

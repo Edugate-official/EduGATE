@@ -1,0 +1,92 @@
+#
+#	S O U R C E S
+#
+
+# source: defining 3 spherical gamma sources 
+
+/gate/source/addSource 						GammaSource
+/gate/source/GammaSource/gps/type			Volume
+/gate/source/GammaSource/gps/shape			Sphere
+/gate/source/GammaSource/gps/radius			2.0 mm
+#/gate/source/GammaSource/gps/centre 		0. 0. 2. cm
+/gate/source/GammaSource/gps/centre 		0. 0. 6. cm
+/gate/source/GammaSource/gps/particle		gamma
+/gate/source/GammaSource/gps/energytype 	Mono
+/gate/source/GammaSource/gps/monoenergy 	{Src_E} keV
+/gate/source/GammaSource/setActivity 		{Src_Act}
+/gate/source/GammaSource/gps/angtype		iso
+/gate/source/GammaSource/gps/mintheta		60. deg
+/gate/source/GammaSource/gps/maxtheta 		120. deg
+/gate/source/GammaSource/gps/minphi 		150. deg
+/gate/source/GammaSource/gps/maxphi 		210. deg
+
+/gate/source/addSource 						GammaSource2
+/gate/source/GammaSource2/gps/type			Volume
+/gate/source/GammaSource2/gps/shape			Sphere
+/gate/source/GammaSource2/gps/radius		2.0 mm
+#/gate/source/GammaSource2/gps/centre 		0. 0. 1. cm
+/gate/source/GammaSource2/gps/centre 		0. 0. 3. cm
+/gate/source/GammaSource2/gps/particle		gamma
+/gate/source/GammaSource2/gps/energytype 	Mono
+/gate/source/GammaSource2/gps/monoenergy 	{Src_E} keV
+/gate/source/GammaSource2/setActivity 		{Src_Act}
+/gate/source/GammaSource2/gps/angtype		iso
+/gate/source/GammaSource2/gps/mintheta		60. deg
+/gate/source/GammaSource2/gps/maxtheta 		120. deg
+/gate/source/GammaSource2/gps/minphi 		150. deg
+/gate/source/GammaSource2/gps/maxphi 		210. deg
+
+/gate/source/addSource 						GammaSource3
+/gate/source/GammaSource3/gps/type			Volume
+/gate/source/GammaSource3/gps/shape			Sphere
+/gate/source/GammaSource3/gps/radius		2.0 mm
+/gate/source/GammaSource3/gps/centre 		0. 0. 0. cm
+/gate/source/GammaSource3/gps/particle		gamma
+/gate/source/GammaSource3/gps/energytype 	Mono
+/gate/source/GammaSource3/gps/monoenergy 	{Src_E} keV
+/gate/source/GammaSource3/setActivity 		{Src_Act}
+/gate/source/GammaSource3/gps/angtype		iso
+/gate/source/GammaSource3/gps/mintheta		60. deg
+/gate/source/GammaSource3/gps/maxtheta 		120. deg
+/gate/source/GammaSource3/gps/minphi 		150. deg
+/gate/source/GammaSource3/gps/maxphi 		210. deg
+
+/gate/source/addSource 						GammaSource4
+/gate/source/GammaSource4/gps/type			Volume
+/gate/source/GammaSource4/gps/shape			Sphere
+/gate/source/GammaSource4/gps/radius		2.0 mm
+#/gate/source/GammaSource4/gps/centre 		0. 0. -1. cm
+/gate/source/GammaSource4/gps/centre 		0. 0. -3. cm
+/gate/source/GammaSource4/gps/particle		gamma
+/gate/source/GammaSource4/gps/energytype 	Mono
+/gate/source/GammaSource4/gps/monoenergy 	{Src_E} keV
+/gate/source/GammaSource4/setActivity 		{Src_Act}
+/gate/source/GammaSource4/gps/angtype		iso
+/gate/source/GammaSource4/gps/mintheta		60. deg
+/gate/source/GammaSource4/gps/maxtheta 		120. deg
+/gate/source/GammaSource4/gps/minphi 		150. deg
+/gate/source/GammaSource4/gps/maxphi 		210. deg
+
+/gate/source/addSource 						GammaSource5
+/gate/source/GammaSource5/gps/type			Volume
+/gate/source/GammaSource5/gps/shape			Sphere
+/gate/source/GammaSource5/gps/radius		2.0 mm
+#/gate/source/GammaSource5/gps/centre 		0. 0. -2. cm
+/gate/source/GammaSource5/gps/centre 		0. 0. -6. cm
+/gate/source/GammaSource5/gps/particle		gamma
+/gate/source/GammaSource5/gps/energytype 	Mono
+/gate/source/GammaSource5/gps/monoenergy 	{Src_E} keV
+/gate/source/GammaSource5/setActivity 		{Src_Act}
+/gate/source/GammaSource5/gps/angtype		iso
+/gate/source/GammaSource5/gps/mintheta		60. deg
+/gate/source/GammaSource5/gps/maxtheta 		120. deg
+/gate/source/GammaSource5/gps/minphi 		150. deg
+/gate/source/GammaSource5/gps/maxphi 		210. deg
+
+/gate/source/list
+
+/gate/source/GammaSource/gps/confine 		source_vol
+/gate/source/GammaSource2/gps/confine 		source_vol
+/gate/source/GammaSource3/gps/confine 		source_vol
+/gate/source/GammaSource4/gps/confine 		source_vol
+/gate/source/GammaSource5/gps/confine 		source_vol

@@ -1,0 +1,486 @@
+[G4] 
+[G4] *************************************************************
+[G4]  Geant4 version Name: geant4-10-03-patch-01    (24-February-2017)
+[G4]                       Copyright : Geant4 Collaboration
+[G4]                       Reference : NIM A 506 (2003), 250-303
+[G4]                             WWW : http://cern.ch/geant4
+[G4] *************************************************************
+[G4] 
+[G4] ### WARNING: G4EmProcessOptions class is obsolete and will be removed in the next public release 
+    Please, try to use G4EmParameters class and/or UI interface to EM parameters
+[Core-0] Initialization of geometry
+[Core-0] Initialization of physics
+[G4] ### WARNING: G4EmProcessOptions class is obsolete and will be removed in the next public release 
+    Please, try to use G4EmParameters class and/or UI interface to EM parameters
+[Core-0] Initialization of actors
+[Core-0] 
+[Core-0] **********************************************************************
+[Core-0]  GATE version name: gate_v8.0                                         
+[Core-0]                     Copyright : OpenGATE Collaboration                
+[Core-0]                     Reference : Phys. Med. Biol. 49 (2004) 4543-4561  
+[Core-0]                     Reference : Phys. Med. Biol. 56 (2011) 881-901    
+[Core-0]                     WWW : http://www.opengatecollaboration.org        
+[Core-0] **********************************************************************
+[Core-0] 
+[Core-0] You are using Geant4 version 10.3.1
+[Core-0] Starting macro MR_PET.mac
+===== XML PATH ====: ./Materials.xml
+===== XML PATH ====: 0x7f869033ca60
+===== XML PATH ====: ./Materials.xml
+===== XML PATH ====: 0x7f86903442c0
+
+GATE object:        'systems/scanner'
+Components:
+
+GATE object:        'systems/scanner/base'
+Attached to volume: scanner
+Nb of children:       1
+
+	GATE object:        'systems/scanner/level1'
+	Attached to volume: ---
+	Nb of children:       1
+
+		GATE object:        'systems/scanner/level2'
+		Attached to volume: crystal
+		Nb of children:       1
+
+			GATE object:        'systems/scanner/level3'
+			Attached to volume: ---
+			Nb of children:       1
+
+				GATE object:        'systems/scanner/level4'
+				Attached to volume: ---
+				Nb of children:       2
+
+					GATE object:        'systems/scanner/layer0'
+					Attached to volume: ---
+					Nb of children:       0
+
+					GATE object:        'systems/scanner/layer1'
+					Attached to volume: ---
+[Core-0] Initialization of geometry
+					Nb of children:       0
+Current application state is PreInit
+Warning : Geant4 kernel is not Init state : Assuming Init state.
+[Core-0] Initialization of physics
+[Physic-0] WARNING: manual physic lists are being deprecated.
+Please, use physic list builder mechanism instead. Related documentation can be found at:
+http://wiki.opengatecollaboration.org/index.php/Users_Guide_V7.0:Setting_up_the_physics
+### WARNING: G4EmProcessOptions class is obsolete and will be removed in the next public release 
+    Please, try to use G4EmParameters class and/or UI interface to EM parameters
+[Core-0] Initialization of actors
+GateSourceMgr::ListSources: List of the sources in the source manager
+Source --------------> IonSource
+  ID                 : 0
+  type               : gps
+  activity (Bq)      : 50
+  startTime (s)      : 0
+  time (s)           : 0
+  forcedUnstable     : 1
+  forcedHalfLife (s) : 1e+08
+  verboseLevel       : 0
+  relative to vol    : world
+---------------------- 
+
+[Acquisition-0]   
+[Acquisition-0] ============= Source initialization =============
+[Acquisition-0]   
+[Acquisition-0] ============= Acquisition starts! =============
+[Acquisition-0] Simulation start time = 0 sec
+[Acquisition-0] Simulation end time   = 100 sec
+[Acquisition-0] Simulation will have  = 10 run(s)
+
+--------- MTwist engine status ---------
+ Initial seed      = 437398325
+ Current index     = 131
+ Array status mt[] = 
+437398325 2361223402 2721483658 1625871531 1582358806
+1509891352 1609030627 1179890225 2830171384 2819332267
+4192512951 2567377423 583930925 2371160782 2699587210
+1150444471 3877092574 1182451778 1097981313 3488998291
+2612713444 1569407955 3791332336 234306038 776504358
+3059644695 2913272419 3439778144 1136574251 3233080751
+2918951162 2424201719 2918957769 1461681464 2986272927
+1012452116 1363268360 3659994034 818642427 2089879342
+3361275059 3542475161 3068357612 939389713 3485204193
+3770712407 2859792978 1917555135 2902535718 1445230693
+4220322726 1796783436 657187989 230157310 1926039916
+1122700600 2573121717 1949945708 1925917499 2866812957
+338369399 4210394416 2408241245 3995808954 2471611965
+509548060 1226618190 2122567534 4094443023 2556225281
+1767686005 1614322955 3316010810 831636166 1797770856
+2232000696 2162553774 601108265 1175620731 3788813937
+61668682 735217795 4105369345 3923346973 4268357674
+716953986 772891296 2902690167 1160239233 2266295001
+1290591169 491549467 41934083 3100495244 2467632996
+4238463389 2824290742 3632414821 3936616096 275624370
+591224222 4121001403 1694896638 754946306 1417431090
+1427163016 3408267895 3133551663 727296813 3241582126
+3295509807 325250763 3277838727 47478149 593070827
+3457716778 3238566817 1562188127 2829078668 1849542269
+1258007396 2412162130 2177420298 2644559779 2628447233
+4291934380 173835401 86809484 984304316 733419693
+3828109763 4185653571 3545743044 2183644168 903852664
+2030805471 273197854 2786103647 2547982139 961270536
+1410435764 3038353142 898441938 873406313 3383072253
+1837833159 4096322480 808241458 2444567374 1936628113
+2915083878 1657350667 4280479882 3141613478 2097002574
+1977941702 4213310495 895654825 1658051403 2499157713
+1465783519 190515767 2934142805 2986124534 3751782632
+1842374748 4053660247 3930820555 775537296 936956793
+3859165287 2467470367 2091785501 4194924729 2087595024
+1837333604 2503287177 3686178696 1799050633 3320219483
+1170833004 3458348726 2109305631 2794944909 1891204387
+2165543203 1229581247 327463089 918515601 1160945138
+958684317 3308490672 3609427295 479900173 1823225059
+3530280941 3461441450 406214514 509248192 4243478151
+1676723932 4101356282 2622555655 1314065860 3582319749
+1887287211 1720283360 63500948 438626612 1640552021
+1530627062 2816163910 12631976 2419361309 3210248721
+1846312278 996279083 462046160 1988563434 2907559314
+2649707180 225230211 4024885389 1076139749 862686420
+563610757 3607623259 4116793755 49045980 614815921
+176797627 3318059182 2988026409 3411945184 1932120953
+972269379 410573147 2843505876 4068122460 3108223082
+1077897720 982126894 3689702936 1973795994 2827967771
+1360075986 4059188021 4115764037 4293497238 3441569218
+3846133535 2304727815 3547830005 1454519819 1166060784
+2934453524 27244718 2459630503 1163105819 671359813
+325376061 1143797270 1678796569 860652927 1796907811
+1354600307 1353423620 46978820 1258158496 1076995730
+2009097229 12969419 580537639 3392884852 4004998917
+3925017713 2438972430 117884369 4198491531 2479052735
+4163945385 362360107 3737638417 1222973493 4123156896
+1801830764 430155295 1347428954 3866968583 1977299125
+292981798 835691041 529899817 1030129490 1662797440
+2506742540 2120215470 1992401972 1421420307 745737541
+2489395813 651680464 2465375550 2831961563 2603800781
+2998882780 3445431240 1076403018 3995953355 2188730397
+4254631025 1663779889 1692375080 3921934950 2417285139
+340875504 994084844 816246105 2421114459 3562759004
+2077559995 2951975075 2749708743 96286972 1711954096
+3831674906 2217149475 226577228 2757911108 3109174503
+1716229283 919230261 2767373877 2673648640 3344943128
+3348981494 702921977 2962477198 2294297742 1338484879
+3604709210 1127145586 1052842421 686031552 984471320
+811185617 979932623 1880613638 723276319 2096627352
+2269533371 1596288860 3655906833 347961467 3281476841
+1842799541 2140089192 1838568146 4133919141 1514042853
+1895270492 2986778 1936323756 3917029036 2566767479
+3723148182 689029175 694109730 2450317018 3124593833
+720493545 2944038240 1372570398 3762066352 1893077525
+44947291 1582476127 3420777359 1949490102 1168547758
+3623528583 2779718033 102034301 3299987152 1838843327
+3216733047 2045848491 371864981 2825314893 64786864
+3419188214 4286117424 3319754407 3654839357 3791774720
+2916716986 2715416356 1246484875 303935232 3512536207
+3443581132 747665980 2383304510 1794869311 3000496138
+249429181 1325456679 3048904597 1725865771 3408414507
+2266004578 45118331 2311545891 3106352034 3022837694
+1263057611 4079865170 1026120598 208562640 2732593331
+1277972601 2547251453 3118118209 2535415830 2052562316
+4072447818 3701992055 1138988399 298046482 859721415
+2871956785 262023630 3664231926 1028198490 2986975028
+2256123905 2106865123 2910664159 692356839 411818458
+1941479098 2951066752 449301252 3113500239 3169766173
+4139957240 2571796165 3282928962 546069861 522119066
+509135748 3196973271 2511667917 1452532848 951098203
+2219704238 2118970532 327199714 2565719028 3076978649
+2705391155 100893730 906450232 839358695 1881404403
+1062847051 4218473577 3754647973 3590938194 895652042
+4242881416 3088769710 3365764020 56082444 2545496726
+3392023103 4034185096 1974017716 538639431 4120414434
+815098789 2937177850 2789620154 1654669179 3750188806
+454689758 1617385084 1870202424 4137875301 1350251303
+486835688 1741291123 419063526 3022368939 1594369435
+3649847729 3344707370 2461699614 1818955518 238838670
+2415675130 1632287181 2222816114 211854631 3956541787
+3843017137 1846073140 1662732004 1056343893 1426252678
+1117259073 3314111551 182868396 2526179037 3778287357
+2194473529 1152415307 4243736375 1444736394 2539003102
+1685004500 3661427474 2308374719 3642978716 3525504199
+3252178785 3229664696 683415510 2849042302 2885409277
+738163373 1798110548 631599517 3143490054 3419351466
+3047547588 741896246 2144021863 1816035672 1028696888
+2868676404 343359595 3413290837 3077453069 541653003
+903135608 46239354 150110789 4215755869 1172085051
+1184792584 4216084148 2458330971 3268421958 2132359011
+2135182805 1415916240 3347759010 598853043 601148622
+2251361654 2142856437 1305963126 456634918 1918476594
+17163860 1273156954 2385043998 4125504324 2419342396
+2794124464 3668168309 1498913994 268861780 3339910242
+2251586948 9190942 2674168343 2406343051 1523273296
+4015407417 3599091751 3823058042 297705220 208265948
+2486320917 3375838557 199843425 389752721 326776706
+1937406616 18694572 1952708396 686988306 3652925292
+1871726622 1197346191 3292420443 1540446734 221483330
+2665653090 4034451257 3849385532 1225908278 3129730831
+1160978302 427779705 375992604 1250713196 417634402
+2859111180 840991977 475276113 1464814170 1301285709
+250880867 1224143735 1643263479 2234118776 363198093
+2504441101 1065263192 1395416358 2389418450
+----------------------------------------
+[Acquisition-0] Slice 0 from 0 to 10 s [slice=10 s]
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+======================================================================
+The G4PenelopeIonisationModel is being used with the PIXE flag ON.
+Atomic de-excitation will be produced statistically by the PIXE 
+interface by using the shell cross section --> Livermore
+The built-in model procedure for atomic de-excitation is disabled. 
+*Please be sure this is intended*, or disable PIXE by
+/process/em/pixe false
+======================================================================
+
+Compton:   for  gamma, applyCuts: 1     SubType= 13  BuildTable= 1
+      Lambda table from 100 eV  to 1 MeV, 7 bins per decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          PenCompton :  Emin=        0 eV    Emax=      100 TeV  FluoActive
+
+GammaConversion:   for  gamma, applyCuts: 1     SubType= 14  BuildTable= 1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PenConversion :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=      100 TeV
+
+PhotoElectric:   for  gamma, applyCuts: 1     SubType= 12  BuildTable= 0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        PenPhotoElec :  Emin=        0 eV    Emax=      100 TeV  FluoActive
+
+Bremsstrahlung:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             PenBrem :  Emin=        0 eV    Emax=        1 GeV
+            eBremLPM :  Emin=        1 GeV   Emax=      100 TeV   DipBustGen
+
+ElectronIonisation:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             PenIoni :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+Bremsstrahlung:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             PenBrem :  Emin=        0 eV    Emax=        1 GeV
+            eBremLPM :  Emin=        1 GeV   Emax=      100 TeV   DipBustGen
+
+ElectronIonisation:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             PenIoni :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 84 bins Emin=    100 eV    Emax=    100 TeV
+
+IonIonisation:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.02, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=      100 TeV
+
+IonIonisation:   for  alpha    SubType= 2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=   7.9452 MeV
+          BetheBloch :  Emin=   7.9452 MeV   Emax=      100 TeV
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[Acquisition-0] Slice 1 from 10 to 20 s [slice=10 s]
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[Acquisition-0] Slice 2 from 20 to 30 s [slice=10 s]
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[Acquisition-0] Slice 3 from 30 to 40 s [slice=10 s]
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[Acquisition-0] Slice 4 from 40 to 50 s [slice=10 s]
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[Acquisition-0] Slice 5 from 50 to 60 s [slice=10 s]
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[Acquisition-0] Slice 6 from 60 to 70 s [slice=10 s]
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[Acquisition-0] Slice 7 from 70 to 80 s [slice=10 s]
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[Acquisition-0] Slice 8 from 80 to 90 s [slice=10 s]
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[Acquisition-0] Slice 9 from 90 to 100 s [slice=10 s]
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 3 regions:
+          DefaultRegionForTheWorld  1  1  1
+          scanner  1  1  1
+          crystal  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[G4-cerr] ERROR: G4VisCommandsViewerSet::SetNewValue: no current viewer.
+[G4-cerr] ERROR: G4VisCommandsViewerZoom::SetNewValue: no current viewer.
+G4OpenGLViewerMessenger::SetNewValue: No current viewer.
+  "/vis/open", or similar, to get one.
+G4OpenGLViewerMessenger::SetNewValue: No current viewer.
+  "/vis/open", or similar, to get one.
+[G4-cerr] ERROR: G4VisCommandsViewerSet::SetNewValue: no current viewer.
+[G4-cerr] ERROR: G4VisCommandsViewerZoom::SetNewValue: no current viewer.
+G4OpenGLViewerMessenger::SetNewValue: No current viewer.
+  "/vis/open", or similar, to get one.
+G4OpenGLViewerMessenger::SetNewValue: No current viewer.
+  "/vis/open", or similar, to get one.
+[Core-0] End of macro MR_PET.mac
+GateToBinary deleting...
+Graphics systems deleted.
+Visualization Manager deleting...
+WARNING - Attempt to delete the physical volume store while geometry closed !
+WARNING - Attempt to delete the logical volume store while geometry closed !
+WARNING - Attempt to delete the solid store while geometry closed !
+WARNING - Attempt to delete the region store while geometry closed !
+Time is: Tue Jul 17 15:01:59 CEST 2018

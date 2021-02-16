@@ -1,0 +1,132 @@
+	#
+#	C O N F I G U R A T I O N
+#
+#	configuration_std.mac for setting various standard parameters
+#	some of which are overwritten following the interactive selection
+#
+##### select VIEWPOINT AND VISUALIZATION
+#
+
+# lateral view
+#/control/alias ViewPointThetaPhi 		90 0
+#/control/alias ViewPointThetaPhi 		-90 0
+
+# front view
+/control/alias ViewPointThetaPhi 		0 90
+
+#side view
+/control/alias ViewPointThetaPhi		60 60
+
+# top view
+#/control/alias ViewPointThetaPhi 		89 90
+
+#/control/alias VisuOnOff				novisu
+#/control/alias VisuOnOff				visu
+
+#
+##### select PHANTOM VOLUME material
+#
+#/control/alias PhantomMaterial 		Water
+/control/alias PhantomMaterial 			Vacuum
+#/control/alias PhantomMaterial 		Air
+#/control/alias PhantomMaterial 		PVC
+#/control/alias PhantomMaterial 		Plexiglass
+#/control/alias PhantomMaterial 		Liver
+#/control/alias PhantomMaterial 		LSO
+#/control/alias PhantomMaterial 		Lead
+#/control/alias PhantomMaterial 		Tungsten
+
+/control/alias PhanRmax 				59.0 mm
+/control/alias PhanRmin					2.1 mm
+
+#
+##### select SOURCE VOLUME material
+#
+/control/alias SourceVolMaterial 		Water
+#/control/alias SourceVolMaterial 		Vacuum
+#/control/alias SourceVolMaterial 		Air
+#/control/alias SourceVolMaterial 		PVC
+#/control/alias SourceVolMaterial 		Plexiglass
+#/control/alias SourceVolMaterial 		Liver
+#/control/alias SourceVolMaterial 		LSO
+#/control/alias SourceVolMaterial 		Lead
+
+/control/alias SourceVolRmax 			2.0 mm
+/control/alias SourceVolRmin			0.0 mm
+
+#
+###### select SOURCE SIZE, TYPE, ENERGY, ACTIVITY 
+#
+/control/alias SourceRad				0.05 mm
+
+#/control/alias SourceType 				electron
+#/control/alias SourceType 				positron
+#/control/alias SourceType 				gamma
+
+# limit angular range (not valid for Ion-Sources !!)
+#/control/alias theta_min 				60. deg
+#/control/alias theta_max 				120. deg
+#/control/alias phi_min 				150. deg
+#/control/alias phi_max 				210. deg
+
+/control/alias theta_min 				0. deg
+/control/alias theta_max 				180. deg
+/control/alias phi_min 					0. deg
+/control/alias phi_max 					360. deg
+
+# energy resolution (format: 0.15 corresponding to 15%)
+/control/alias E_res 				0.15
+
+/control/alias SourceType 				ion_universal
+
+##/control/alias Ion_Z_A_val 				53 131
+
+# Iodine: 53 131; Mercury: 80 197; Indium: 49 111;
+
+# Cs-137
+#/control/alias Ion_Z_val 				55
+#/control/alias Ion_A_val 				137
+
+# I-131
+/control/alias Ion_Z_val 				53
+/control/alias Ion_A_val 				131
+
+# Y-90
+#/control/alias Ion_Z_val 				39
+#/control/alias Ion_A_val 				90
+
+# P-32
+#/control/alias Ion_Z_val 				15
+#/control/alias Ion_A_val 				32
+
+# Lu-176
+#/control/alias Ion_Z_val 				71
+#/control/alias Ion_A_val 				176
+
+# Co-60
+#/control/alias Ion_Z_val 				27
+#/control/alias Ion_A_val 				60
+
+# Hg-197
+/control/alias Ion_Z_val 				80
+/control/alias Ion_A_val 				197
+
+# In-111
+#/control/alias Ion_Z_val 				49
+#/control/alias Ion_A_val 				111
+
+# Energy in unit of keV
+# -->> for ION-Sources we use 466 <> ION	as EnergyValue !!
+#/control/alias EnergyValue				466
+#/control/alias SourceEnergy 			{EnergyValue} keV
+
+/control/alias SourceActivity 			100000 Bq
+
+#
+## select Root output filename
+#
+#/control/alias RootFileName 			Gamma_Spectro_{SourceType}_{CrystalMaterial}_{CollimatorMaterial}_{EnergyValue}
+#/control/alias RootFileName 			Gamma_Spectro_{SourceType}_{CrystalMaterial}_{PhantomMaterial}_{Ion_Z_val}_{Ion_A_val}
+
+
+

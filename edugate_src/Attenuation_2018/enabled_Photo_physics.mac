@@ -1,0 +1,4 @@
+#
+# use PhotoElectric
+/gate/physics/addProcess PhotoElectric
+/gate/physics/processes/PhotoElectric/setModel PenelopeModel

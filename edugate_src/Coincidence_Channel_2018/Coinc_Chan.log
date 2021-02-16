@@ -1,0 +1,796 @@
+[G4] 
+[G4] *************************************************************
+[G4]  Geant4 version Name: geant4-10-03-patch-01    (24-February-2017)
+[G4]                       Copyright : Geant4 Collaboration
+[G4]                       Reference : NIM A 506 (2003), 250-303
+[G4]                             WWW : http://cern.ch/geant4
+[G4] *************************************************************
+[G4] 
+[G4] ### WARNING: G4EmProcessOptions class is obsolete and will be removed in the next public release 
+    Please, try to use G4EmParameters class and/or UI interface to EM parameters
+[Core-0] Initialization of geometry
+[Core-0] Initialization of physics
+[G4] ### WARNING: G4EmProcessOptions class is obsolete and will be removed in the next public release 
+    Please, try to use G4EmParameters class and/or UI interface to EM parameters
+[Core-0] Initialization of actors
+[Core-0] 
+[Core-0] **********************************************************************
+[Core-0]  GATE version name: gate_v8.0                                         
+[Core-0]                     Copyright : OpenGATE Collaboration                
+[Core-0]                     Reference : Phys. Med. Biol. 49 (2004) 4543-4561  
+[Core-0]                     Reference : Phys. Med. Biol. 56 (2011) 881-901    
+[Core-0]                     WWW : http://www.opengatecollaboration.org        
+[Core-0] **********************************************************************
+[Core-0] 
+[Core-0] You are using Geant4 version 10.3.1
+[Core-0] Starting macro Coin_Chan.mac
+===== XML PATH ====: ./Materials.xml
+===== XML PATH ====: 0x7fca8d2cedd0
+ CREATED THE COMMAND /gate/systems/cylindricalPET/addAnewRsector
+===== XML PATH ====: ./Materials.xml
+===== XML PATH ====: 0x7fca8d1891e0
+
+GATE object:        'systems/cylindricalPET'
+Components:
+
+GATE object:        'systems/cylindricalPET/base'
+Attached to volume: cylindricalPET
+Nb of children:       1
+
+	GATE object:        'systems/cylindricalPET/rsector'
+	Attached to volume: cassette
+	Nb of children:       1
+
+		GATE object:        'systems/cylindricalPET/module'
+		Attached to volume: module
+		Nb of children:       1
+
+			GATE object:        'systems/cylindricalPET/submodule'
+			Attached to volume: ---
+			Nb of children:       1
+
+				GATE object:        'systems/cylindricalPET/crystal'
+				Attached to volume: crystal
+				Nb of children:       4
+
+					GATE object:        'systems/cylindricalPET/layer0'
+					Attached to volume: ---
+					Nb of children:       0
+
+					GATE object:        'systems/cylindricalPET/layer1'
+					Attached to volume: ---
+					Nb of children:       0
+
+					GATE object:        'systems/cylindricalPET/layer2'
+					Attached to volume: ---
+					Nb of children:       0
+
+					GATE object:        'systems/cylindricalPET/layer3'
+					Attached to volume: ---
+					Nb of children:       0
+geometrical design type: 1
+ring diameter: 10 cm 
+rsector axial pitch: 0 fm 
+rsector azimuthal pitch: 180 degree
+rsector tangential size: 4 mm 
+rsector axial size: 4 mm 
+module axial size: 4 mm 
+module tangential size: 4 mm 
+module axial pitch: 0 fm 
+module tangential pitch: 0 fm 
+submodule axial size: 4 mm 
+submodule tangential size: 4 mm 
+submodule axial pitch: 0 fm 
+submodule tangential pitch: 0 fm 
+crystal radial size: 1 cm 
+crystal axial size: 4 mm 
+crystal tangential size: 4 mm 
+crystal axial pitch: 0 fm 
+crystal tangential pitch: 0 fm 
+Axial nb of rsectors: 1
+Azimuthal nb of rsectors: 2
+Axial nb of modules: 1
+Tangential nb of modules: 1
+Axial nb of submodules: 1
+Tangential nb of submodules: 1
+Axial nb of crystals: 1
+Tangential nb of crystals: 1
+Radial nb of layers: 0
+===== XML PATH ====: ./Materials.xml
+===== XML PATH ====: 0x7fca8afd2a10
+===== XML PATH ====: ./Materials.xml
+===== XML PATH ====: 0x7fca8d61e200
+ABSLENGTH
+1.7e-06   50000
+4.08e-06   50000
+RINDEX
+1.7e-06   1.00028
+4.08e-06   1.00028
+[Physic-0] The following Geant4's physic-list is enabled :emstandard_opt3
+[Core-0] Initialization of geometry
+Current application state is PreInit
+Warning : Geant4 kernel is not Init state : Assuming Init state.
+[Core-0] Initialization of physics
+### WARNING: G4EmProcessOptions class is obsolete and will be removed in the next public release 
+    Please, try to use G4EmParameters class and/or UI interface to EM parameters
+[Core-0] Initialization of actors
+GateSourceMgr::ListSources: List of the sources in the source manager
+Source --------------> TwoGamma
+  ID                 : 0
+  type               : backtoback
+  activity (Bq)      : 500000
+  startTime (s)      : 0
+  time (s)           : 0
+  forcedUnstable     : 0
+  forcedHalfLife (s) : -0.693147
+  verboseLevel       : 0
+  relative to vol    : world
+---------------------- 
+
+[Acquisition-0]   
+[Acquisition-0] ============= Source initialization =============
+[Acquisition-0]   
+[Acquisition-0] ============= Acquisition starts! =============
+[Acquisition-0] Simulation start time = 0 sec
+[Acquisition-0] Simulation end time   = 10 sec
+[Acquisition-0] Simulation will have  = 10 run(s)
+
+--------- MTwist engine status ---------
+ Initial seed      = 1397954292
+ Current index     = 131
+ Array status mt[] = 
+1397954292 1405365162 1567669625 19396699 120237803
+2548024764 1011724796 2362119283 1965459869 1797047957
+2259389550 1455960743 3399537034 2287205402 3216199046
+1691695395 3416308858 2392202446 1882622094 2223073150
+2882744320 4145087199 2017582306 2137432230 134725883
+2083681824 671564831 2670425942 3259893824 3909754252
+2109223049 3747343815 2178855540 328699567 2431644205
+177124270 3661038026 1613186418 1573777797 2199645499
+881268901 1308624450 959533977 3412188296 1215260163
+3549974775 622232690 1709261609 1961355000 2531811694
+533019598 2691946105 215511483 3864982012 3840930001
+3897058577 3190063698 3730061769 2527979244 1001617953
+3708934209 2257822791 3037445239 950990696 2739291208
+457870195 4247687073 329932077 1984878597 1993432537
+2629475966 1507124019 2901501186 759814473 543804183
+2836229982 3194563480 2433326607 750473327 3942327066
+2626435629 968825820 2706553374 3523242335 3289370016
+851270820 331698442 3564983113 1711961738 3177064496
+1258724884 1388878756 3790845301 1333575147 121579440
+4260878543 3546395868 3044062044 1963332216 4170648352
+4202831923 2581619541 907133113 640879204 3681459676
+708419684 307088350 366820609 485858001 1148644834
+3983496701 3286490021 1123778286 1353710524 2706470659
+3940187352 1661040091 144386423 3299412841 364067657
+3849286981 3886398231 2735506270 1841303495 195112858
+507982399 4289956441 3075850241 3165346991 2834245058
+2848826690 2421256899 366120873 2224234290 604765814
+1629653781 211456876 1238693413 62546110 58710401
+727570801 4084941602 3363120531 2386682463 3467449409
+2414760091 307670511 886081246 3330540586 1634637250
+4212879749 1681817717 1922220636 1249211466 228590897
+3544204784 728736891 1164884004 1245541431 585744365
+426348065 1385938086 2348273029 1752323558 845513671
+3288562984 3280561565 468231677 3381191289 1837802699
+594091612 3728488183 1473659632 3522323138 2864791507
+3021735716 1223436462 398111932 2290477790 3280561535
+3270010528 3608328708 3928106105 475246297 1233460565
+2072151773 347009414 3941597337 490252158 2507047795
+1560827219 389057561 2177869725 16398716 769657518
+2984072553 418772731 521389260 1219612994 3556338486
+1715055025 341779257 4126238535 3143443103 4052725181
+433863363 4004154045 1622830021 2408868132 4191998671
+2491569998 3409452495 363458128 3234059877 3217698068
+1618907269 1893837036 3874061146 4170140663 3285879839
+3740812264 3552087956 3989403249 4126981593 2001113570
+2485062256 1844715996 813408788 688891592 2196100557
+3502383761 3407201921 207676466 297192099 503590457
+1676787304 1311068505 648622245 3159064327 1172687592
+1704902621 458387133 2817775235 176532184 2064777260
+762128310 877334980 4202424139 3567241312 2751204104
+429831660 2490176279 1339147589 3576707281 271371736
+482201399 3376951475 2690213489 1816000353 561314275
+1712722579 816019103 4250002625 3725136785 2517359522
+211175209 2709390647 2817813492 3438231322 685197034
+4199036256 2630093854 3902260252 1823340620 1084173427
+4239625229 2234237082 1484543245 3588553426 4115123852
+751306371 670805448 2529401090 1460428315 2163411806
+276543593 224326539 1670937078 1848528531 4266599099
+1104489402 597578986 3545152374 4237595470 2894943111
+437723552 394192200 3535535761 1298502340 67196388
+3568953376 2273858044 3533391972 2681450706 3990098752
+500135328 2150369618 596344259 1621817891 3527336607
+2623071426 2193424631 482836193 2177005822 3814496422
+163284820 1437882720 2980261250 2805626046 3282873195
+716327240 2726720169 1494598073 3058231003 3392943585
+3552916847 475586786 1033350257 3677782749 3835457759
+3491906582 747051668 143831472 4274473917 1717276996
+2009153160 729022045 1752047874 1311941249 1685102035
+3449923374 830016278 3779733252 2522162714 195223760
+2806121321 2362219921 1611847514 1143712579 3400459367
+4260733138 917458132 3977430276 3943267364 2805980101
+524301798 846682914 2664048591 1739156039 4288701701
+4219605702 1975506466 3174905913 3655058354 2504322881
+2534556124 3565538308 4213849906 433268933 1787003946
+684403049 1060079840 2619400660 2796462307 2300896059
+464922612 1911249084 226633994 1402375276 1585888636
+1358670029 1311950329 264361046 141872493 1912562305
+1459117569 3427473282 3652931688 2078080699 2442660583
+3071531743 318807992 3535830304 1490951000 934440103
+3793436270 2049111949 3139016649 1306625957 1359825219
+4013963930 3923902702 992228371 632010770 1656701614
+4142790560 1323167717 2720836235 1486985893 3724527693
+3661481568 1514095018 1690725651 2250615735 598973703
+1947645026 2788370351 69549538 2583518668 3502981609
+2883402998 3465781737 2806717688 1979333193 1826719760
+2336409950 10465014 1146859193 1874094148 2480738790
+1376195746 2068537598 916372811 1358615368 3238424191
+3993891999 3819765568 2796589604 1223295156 1604724256
+2648421821 1747643668 1768081411 3239050373 689723546
+3352256639 3268898474 2077629292 740370625 2972409574
+3827332534 4089401132 2317575759 3117519654 2909360890
+2898032031 1956015545 538493793 771424271 3413642934
+1227861045 140691025 3276839107 1573586319 3052679382
+1027914101 1636813307 1856469877 2572208792 998398615
+1795788393 483580127 928508115 1124911128 1338987703
+2317079465 1324222291 1360119607 3122233388 4209652229
+961868862 3941305431 55792390 3027761473 2089759827
+3451750463 2740116882 2536733623 4067863889 2161198403
+560405903 2137600598 2765253951 1545977854 1654470793
+4143978391 2494792532 2608191711 2425869859 342238712
+1617343692 1826753494 4100308169 1068603305 2631485605
+2586577628 1497569680 4280201520 1884632603 1581794367
+3837402228 3521768434 539300117 3629579338 2572393423
+4210568932 2438275623 1893681054 247749313 3478133036
+744298643 48652040 1727449138 2917484842 800343764
+2882758577 1187755693 2178228203 1921534461 1967197821
+3369014526 1524215524 3132985197 3734306784 1357803941
+3563035595 2525921280 13079779 4087364265 809640237
+1376988637 3055539689 3782683349 768241293 3890353345
+3801875627 3869491306 796007568 1363039988 651455950
+3912536684 4179898098 2633793597 637096452 1448968638
+1032612230 3616037386 1127831738 2268665589 3146858658
+4464976 971306689 2326373719 3753621948 1672511887
+1020927291 1817124221 811728931 1303497479 3790950807
+427648414 2569840529 3981494843 77578837 2119838407
+3454064733 538029398 571894575 880636621 2005467684
+641116125 644907382 2984590292 3343918005 1203011350
+265975132 797084566 3025033849 1857193939 2245851687
+2232385511 3855746216 1426611399 391942767 2532060957
+1312764046 1473491391 4107653195 382318270 395495757
+3619594937 241287099 508082721 3778288224 945972843
+3633229204 1045515761 3865099124 4240287571 2290930929
+2485850433 1041214674 829002558 757417947 505843405
+3946647112 2211039487 907457338 3681862220 3040211606
+1864755920 3159785442 2544850382 363530219
+----------------------------------------
+[Acquisition-0] Slice 0 from 0 to 1 s [slice=1 s]
+Confirming confinement to volume 'source_vol_phys'...
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+
+phot:   for  gamma, applyCuts: 1     SubType= 12  BuildTable= 0
+      LambdaPrime table from 200 keV to 100 TeV in 174 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric :  Emin=        0 eV    Emax=      100 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma, applyCuts: 1     SubType= 13  BuildTable= 1
+      Lambda table from 10 eV  to 1 MeV, 20 bins per decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 160 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        KleinNishina :  Emin=        0 eV    Emax=      100 TeV  FluoActive
+
+conv:   for  gamma, applyCuts: 1     SubType= 14  BuildTable= 1
+      Lambda table from 1.022 MeV to 100 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=      100 TeV
+
+Rayl:   for  gamma, applyCuts: 1     SubType= 11  BuildTable= 1
+      Lambda table from 10 eV  to 100 keV, 20 bins per decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 180 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh :  Emin=        0 eV    Emax=      100 TeV   CullenGenerator
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 3, latDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=      100 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   AngularGen2BS
+            eBremLPM :  Emin=        1 GeV   Emax=      100 TeV   AngularGen2BS
+
+ePairProd:   for  e-    SubType= 4
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      Sampling table 25x1001; from 0.1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 3, latDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=      100 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   AngularGen2BS
+            eBremLPM :  Emin=        1 GeV   Emax=      100 TeV   AngularGen2BS
+
+ePairProd:   for  e+    SubType= 4
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      Sampling table 25x1001; from 0.1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+annihil:   for  e+, integral: 1 , applyCuts: 1     SubType= 5  BuildTable= 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.05, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=      100 TeV
+
+hBrems:   for  proton    SubType= 3
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:   for  proton    SubType= 4
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+nuclearStopping:   for  proton, applyCuts: 1     SubType= 8  BuildTable= 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   ICRU49NucStopping :  Emin=        0 eV    Emax=        1 MeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.001, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+         ParamICRU73 :  Emin=        0 eV    Emax=      100 TeV   deltaVI
+
+nuclearStopping:   for  GenericIon, applyCuts: 1     SubType= 8  BuildTable= 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   ICRU49NucStopping :  Emin=        0 eV    Emax=        1 MeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+ionIoni:   for  alpha    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=   7.9452 MeV
+          BetheBloch :  Emin=   7.9452 MeV   Emax=      100 TeV
+
+nuclearStopping:   for  alpha, applyCuts: 1     SubType= 8  BuildTable= 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   ICRU49NucStopping :  Emin=        0 eV    Emax=        1 MeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.05, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=      100 TeV
+
+hBrems:   for  anti_proton    SubType= 3
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:   for  anti_proton    SubType= 4
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+nuclearStopping:   for  anti_proton, applyCuts: 1     SubType= 8  BuildTable= 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   ICRU49NucStopping :  Emin=        0 eV    Emax=        1 MeV
+
+msc:   for kaon+    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  kaon+    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.05, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=      100 TeV
+
+hBrems:   for  kaon+    SubType= 3
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:   for  kaon+    SubType= 4
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for kaon-    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  kaon-    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.05, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=      100 TeV
+
+hBrems:   for  kaon-    SubType= 3
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:   for  kaon-    SubType= 4
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for mu+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+muIoni:   for  mu+    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.05, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=      100 TeV
+
+muBrems:   for  mu+    SubType= 3
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=      100 TeV
+      ===== Limit on energy threshold has been applied 
+
+muPairProd:   for  mu+    SubType= 4
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for mu-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+muIoni:   for  mu-    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.05, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=      100 TeV
+
+muBrems:   for  mu-    SubType= 3
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=      100 TeV
+      ===== Limit on energy threshold has been applied 
+
+muPairProd:   for  mu-    SubType= 4
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for pi+    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  pi+    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.05, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=      100 TeV
+
+hBrems:   for  pi+    SubType= 3
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:   for  pi+    SubType= 4
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+msc:   for pi-    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 TeV  Table with 240 bins Emin=    100 eV    Emax=    100 TeV
+
+hIoni:   for  pi-    SubType= 2
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      finalRange(mm)= 0.05, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=      100 TeV
+
+hBrems:   for  pi-    SubType= 3
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=      100 TeV
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:   for  pi-    SubType= 4
+      dE/dx and range tables from 10 eV  to 100 TeV in 260 bins
+      Lambda tables from threshold to 100 TeV, 20 bins per decade, spline: 1
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=      100 TeV
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+[Acquisition-0] Slice 1 from 1 to 2 s [slice=1 s]
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+[Acquisition-0] Slice 2 from 2 to 3 s [slice=1 s]
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+[Acquisition-0] Slice 3 from 3 to 4 s [slice=1 s]
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+[Acquisition-0] Slice 4 from 4 to 5 s [slice=1 s]
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+[Acquisition-0] Slice 5 from 5 to 6 s [slice=1 s]
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+[Acquisition-0] Slice 6 from 6 to 7 s [slice=1 s]
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+[Acquisition-0] Slice 7 from 7 to 8 s [slice=1 s]
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+[Acquisition-0] Slice 8 from 8 to 9 s [slice=1 s]
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+[Acquisition-0] Slice 9 from 9 to 10 s [slice=1 s]
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 7 regions:
+          DefaultRegionForTheWorld  1  1  1
+          cylindricalPET  1  1  1
+          cassette  1  1  1
+          module  1  1  1
+          crystal  1  1  1
+          Phantom  1  1  1
+          source_vol  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger cascade flag: 0
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+     User simulation time (sec)   := 140.5
+     Real simulation time (sec)   := 142.25
+     System simulation time (sec) := 0.72
+[Core-0] End of macro Coin_Chan.mac
+GateToBinary deleting...
+GateOutputMgr deleting...
+Graphics systems deleted.
+Visualization Manager deleting...
+WARNING - Attempt to delete the physical volume store while geometry closed !
+WARNING - Attempt to delete the logical volume store while geometry closed !
+WARNING - Attempt to delete the solid store while geometry closed !
+WARNING - Attempt to delete the region store while geometry closed !
+Time is: Fri Apr 12 14:23:48 CEST 2019

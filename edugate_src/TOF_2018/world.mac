@@ -1,0 +1,7 @@
+# W O R L D
+
+/gate/world/geometry/setXLength	      50. cm
+/gate/world/geometry/setYLength	      50. cm
+/gate/world/geometry/setZLength	      50. cm
+/gate/world/setMaterial			          Vacuum
+/gate/world/vis/setColor	 	          black

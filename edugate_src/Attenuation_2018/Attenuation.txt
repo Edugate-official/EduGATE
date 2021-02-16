@@ -1,0 +1,13 @@
+VisuOnOff: novisu; visu;
+ViewPointThetaPhi: 0 90; 30 30; 90 0; -90 0; 89 90; 15 30; 30 30; 45 45; 60 60;
+CrysMat: Air; Lead;  Water; Plexiglass; Copper; Tungsten; Lung; Liver;
+Rad:      50;  1; 2; 5; 10; 20; 70; 100; 200; 300;
+particle: e-; gamma; e+;
+Compton:  enabled; disabled;
+Photo:    enabled ; disabled;
+Annihil: enabled;  disabled;
+Brems:disabled;    enabled;
+Ioni:     enabled;disabled;
+MScat:    enabled;disabled;
+Src_E: 511; 100; 10; 30; 50; 80; 90; 120; 140; 160; 200; 240; 364; 400; 600; 800; 1000; 1600;
+Src_Act: 10000; 1000; 10; 20; 50; 100; 100000;

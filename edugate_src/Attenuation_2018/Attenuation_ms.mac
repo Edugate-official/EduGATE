@@ -1,0 +1,131 @@
+################################################
+#
+#	Attenuation.mac
+#
+#	Version 1
+#	September 12, 2017
+#	Uwe Pietrzyk -	u.pietrzyk@fz-juelich.de
+#
+#
+#	C O N F I G U R A T I O N
+
+/control/execute configuration.mac
+
+# construct filename from specific parameters:
+#
+# starting with the name of the module: Attn = Attenuation
+#
+# items used to build RootFileName:
+#
+ #CrysMat: Crystal Material
+# Rad: Radius of Sphere
+#particle: type of emitted Particle
+#Src_E: Energy of emitted Particle
+#Src_Act: Source Activity
+# Annihil: Annihilation
+
+#
+/control/alias RootFileName  Attn_MS_{CrysMat}_{Rad}_Com_{Compton}_Pho_{Photo}_Ann_{Annihil}_Brems_{Brems}_Ioni_{Ioni}_MScat_{MScat}_{source}_{Src_Act}
+#
+
+/control/execute {VisuOnOff}.mac
+
+# Note!!
+# you need to correct the path to GateMaterials.db
+
+/gate/geometry/setMaterialDatabase ./GateMaterials.db
+
+#	W O R L D
+
+/gate/world/geometry/setXLength	50. cm
+/gate/world/geometry/setYLength	50. cm
+/gate/world/geometry/setZLength	50. cm
+/gate/world/setMaterial			Vacuum
+/gate/world/vis/setColor		black
+
+# 	C A M E R A  or  D E T E C T O R 
+
+/control/execute camera_Sphere.mac
+
+# 	P H A N T O M
+
+###/control/execute phantom.mac
+
+# 	P H Y S I C S
+
+
+#/gate/physics/addPhysicsList emstandard_opt3
+#/gate/physics/addProcess RadioactiveDecay
+#/control/execute annihilation_{Annihil}.mac
+
+/control/execute physics.mac
+
+#	I N I T I A L I Z E 
+
+/gate/run/initialize
+
+
+##/gate/physics/processList 
+#OUTPUT (for debug etc.)
+#in file
+#/gate/physics/print phys.txt
+#on terminal
+#/gate/physics/print /dev/stdout
+
+
+# 	D I G I T I Z E R
+
+/control/execute digitizer.mac
+
+#	S O U R C E
+
+/control/execute {source}.mac
+
+#	V E R B O S I T Y
+
+/gate/verbose Physic    0
+/gate/verbose Cuts      0
+/gate/verbose Actor     0
+/gate/verbose SD        0
+/gate/verbose Actions   0
+/gate/verbose Step      0
+/gate/verbose Error     0
+/gate/verbose Warning   0
+/gate/verbose Output    0
+/gate/verbose Core      0
+
+/gate/output/verbose	0
+/run/verbose 			0
+/event/verbose			0
+/tracking/verbose		0
+
+#	O U T P U T 
+
+/gate/output/root/enable
+
+/gate/output/root/setFileName	{RootFileName}
+/gate/output/root/setRootHitFlag			1
+/gate/output/root/setRootSinglesFlag		1
+
+
+#   	R A N D O M
+
+# JamesRandom Ranlux64 MersenneTwister
+/gate/random/setEngineName 		MersenneTwister
+#/gate/random/setEngineSeed 	default
+/gate/random/setEngineSeed 		auto
+#/gate/random/setEngineSeed 	123456789
+#/gate/random/resetEngineFrom 	fileName
+/gate/random/verbose 			1
+
+#/control/execute {VisuOnOff}.mac
+
+#	S T A R T 
+/gate/application/setTimeSlice		1. s
+/gate/application/setTimeStart		0. s
+/gate/application/setTimeStop		10. s
+/gate/application/startDAQ
+
+#/control/execute {VisuOnOff}.mac
+
+/control/execute setup_save_{VisuOnOff}.mac
