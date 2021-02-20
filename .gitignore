@@ -1,3 +1,5 @@
 .*
 !/.gitignore
 local_root/*
+**/*.gif
+**/*.root
