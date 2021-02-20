@@ -11,3 +11,14 @@ first:
 - install docker-compose (see docker.com)
 
 then execute the desired "start_*.sh".
+
+### On Mac
+
+first:
+
+- install root (brew install root)
+- install Docker Desktop for Mac
+
+then execute the desired "start_*.sh".
+
+
