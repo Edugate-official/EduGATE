@@ -1,4 +1,4 @@
-#EduGATE
+# EduGATE
 
 **Disclaimer: Early stage and work in progress.**
 
