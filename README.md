@@ -1,4 +1,4 @@
-# EduGATE
+#EduGATE
 
 **Disclaimer: Early stage and work in progress.**
 
@@ -39,14 +39,18 @@ First Docker based EduGATE deployment
 
 ## Docker and ROOT 6 are working, now I would like to start the simulations...
 
-In the moment just one small module is usable. To use it type:
+In the moment just a few modules are usable. To call them type:
 
-`sh start_tof.sh`
+1. `sh start_tof.sh`
+1. `sh start_cc.sh`
+1. `sh start_gamma.sh` (buggy)
 
 in your terminal and follow the GUI. The official modules are planned to be implemented in the near future.
 
 ## Prospects
 
+- Update to EduGATE 2020
+- Test with the GATE 9
 - GUI and analysis of the EduGATE modules via a Jupyter Notebook Interface to the Docker Container (so that just Docker and Chrome are needed)
 - Getting the visualization of the GATE simulation out of the Docker container
 - Full Description of the EduGATE modules in [this repository](https://github.com/Edugate-official/EduGATE-Docs)
