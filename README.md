@@ -45,7 +45,7 @@ In the moment just a few modules are usable. To call them type:
 1. `sh start_cc.sh`
 1. `sh start_gamma.sh` (buggy)
 
-in your terminal and follow the GUI. The official modules are planned to be implemented in the near future.
+in your terminal and follow the GUI.
 
 ## Prospects
 
