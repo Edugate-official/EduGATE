@@ -12,6 +12,13 @@ The experienced user can already make use of the available EduGATE modules. This
 2. [GATE V6: a major enhancement of the GATE simulation platform enabling modelling of CT and radiotherapy](https://pubmed.ncbi.nlm.nih.gov/21248393/)
 3. [A review of the use and potential of the GATE Monte Carlo simulation code for radiation therapy and dosimetry applications](https://pubmed.ncbi.nlm.nih.gov/24877844/)
 
+## Version
+
+First Docker based EduGATE deployment
+
+- EduGATE 2018 modules
+- GATE release tag 8.2
+
 ## Prerequisites
 
 - A working [ROOT 6](https://root.cern/) installation
